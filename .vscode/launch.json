@@ -1,0 +1,47 @@
+{
+    // Utilisez IntelliSense pour en savoir plus sur les attributs possibles.
+    // Pointez pour afficher la description des attributs existants.
+    // Pour plus d'informations, visitez : https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "BlackjackUI",
+            "request": "launch",
+            "mainClass": "classes.BlackjackUI",
+            "projectName": "cardgame"
+        },
+        {
+            "type": "java",
+            "name": "blackjack",
+            "request": "launch",
+            "mainClass": "classes.blackjack",
+            "projectName": "cardgame"
+        },
+        {
+            "type": "java",
+            "name": "blackjack",
+            "request": "launch",
+            "classpath": [
+                "${workspaceFolder}/bin/classes",
+                "${workspaceFolder}/src/classes"
+            ],
+            "sourcePath": [
+                "."
+            ],
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "windows": {
+                "jdkPath": "C:/Program Files/Java/jdk-17/bin"
+            }
+        },
+        {
+            "type": "jdk",
+            "request": "launch",
+            "name": "Launch Java App",
+            "mainClass": "bin.classes.blackjack",
+            "classPaths": [
+                "${workspaceFolder}/bin"
+            ]
+        }
+    ]
+}
