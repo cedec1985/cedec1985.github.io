@@ -1,0 +1,418 @@
+// Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
+package classes;
+
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.Graphics2D;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.Image;
+import java.awt.Insets;
+import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowEvent;
+import java.awt.image.BufferedImage;
+import java.awt.image.ImageObserver;
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import javax.imageio.ImageIO;
+import javax.swing.BorderFactory;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.SwingUtilities;
+import javax.swing.border.Border;
+import javax.swing.border.TitledBorder;
+
+public class BlackjackUI extends JFrame {
+   private static final long serialVersionUID = 1L;
+   private static BufferedImage image;
+   private int nouvelleLargeur;
+   private int nouvelleHauteur;
+   JMenuBar mainMenuBar = new JMenuBar();
+   JMenu fileMenu = new JMenu("Fichier");
+   JMenuItem newMenuItem = new JMenuItem("Nouvelle partie");
+   JMenuItem exitMenuItem = new JMenuItem("Quitter");
+   JTextField dealerTextField = new JTextField();
+   JTextField playerTextField = new JTextField();
+   JLabel winningsLabel = new JLabel();
+   JPanel statsBorder = new JPanel();
+   JTextField winningsTextField = new JTextField();
+   private final JLabel[] dealerLabels = new JLabel[6];
+   private final JLabel[] playerLabels = new JLabel[6];
+   private final JLabel dealerScoreLabel;
+   private final JLabel playerScoreLabel;
+   private final JLabel statusLabel;
+   private final JLabel statsLabel = new JLabel();
+   private final JLabel label = new JLabel();
+   private final JPanel gamePicture = new JPanel();
+   private final JPanel dealerLabel = new JPanel();
+   private final JPanel playerLabel = new JPanel();
+   private final JButton hitButton = new JButton();
+   private final JButton standButton = new JButton();
+   private final JButton restartButton = new JButton();
+   private final Deck deck;
+   private final List<Card> playerHand = new ArrayList();
+   private final List<Card> dealerHand = new ArrayList();
+   Border raisedbevel = BorderFactory.createRaisedBevelBorder();
+   Border loweredbevel = BorderFactory.createLoweredBevelBorder();
+   private Image background;
+   private Image cardImage;
+   private int wins = 0;
+   private int losses = 0;
+   private int ties = 0;
+
+   public BlackjackUI() {
+      this.getContentPane().setLayout(new GridBagLayout());
+      this.gamePicture.setSize(800, 800);
+      GridBagConstraints gridConstraints = new GridBagConstraints();
+      gridConstraints.gridx = 0;
+      gridConstraints.gridy = 0;
+      gridConstraints.gridwidth = 6;
+      gridConstraints.insets = new Insets(10, 10, 10, 10);
+      Icon icon = Icons.BLACKJACK;
+      JLabel logo = new JLabel(icon);
+      this.getContentPane().add(logo, gridConstraints);
+      this.getContentPane().add(this.gamePicture, gridConstraints);
+      this.setTitle("jeu du Blackjack");
+      this.setDefaultCloseOperation(3);
+      this.getContentPane().setBackground(new Color(192, 192, 255));
+      this.setResizable(true);
+      this.deck = new Deck();
+      this.setJMenuBar(this.mainMenuBar);
+      this.mainMenuBar.add(this.fileMenu);
+      this.fileMenu.add(this.newMenuItem);
+      this.fileMenu.addSeparator();
+      this.fileMenu.add(this.exitMenuItem);
+      this.newMenuItem.addActionListener(new ActionListener() {
+         public void actionPerformed(ActionEvent e) {
+            BlackjackUI.this.newMenuItemActionPerformed(e);
+         }
+      });
+      this.exitMenuItem.addActionListener(new ActionListener() {
+         public void actionPerformed(ActionEvent e) {
+            BlackjackUI.this.exitMenuItemActionPerformed(e);
+         }
+      });
+      this.dealerLabel.setFont(new Font("Arial", 1, 14));
+      gridConstraints = new GridBagConstraints();
+      gridConstraints.gridx = -1;
+      gridConstraints.gridy = 1;
+      gridConstraints.gridwidth = 6;
+      gridConstraints.insets = new Insets(10, 10, 10, 0);
+      this.getContentPane().add(this.dealerLabel, gridConstraints);
+      this.dealerTextField.setPreferredSize(new Dimension(130, 30));
+      this.dealerTextField.setFont(new Font("Comic Sans MS", 0, 14));
+      this.dealerTextField.setBackground(new Color(255, 255, 128));
+      this.dealerTextField.setText("cartes du dealer");
+      this.dealerTextField.setForeground(Color.BLUE);
+      this.dealerTextField.setEditable(true);
+      gridConstraints = new GridBagConstraints();
+      gridConstraints.gridx = 12;
+      gridConstraints.gridy = 1;
+      gridConstraints.gridwidth = 2;
+      gridConstraints.insets = new Insets(10, 10, 10, 10);
+      this.getContentPane().add(this.dealerTextField, gridConstraints);
+
+      int i;
+      for(i = 0; i < 6; ++i) {
+         this.dealerLabels[i] = new JLabel();
+         this.dealerLabels[i].setPreferredSize(new Dimension(60, 100));
+         this.dealerLabels[i].setBorder(BorderFactory.createLineBorder(Color.BLACK));
+         gridConstraints = new GridBagConstraints();
+         gridConstraints.gridx = i;
+         gridConstraints.gridy = 1;
+         gridConstraints.insets = new Insets(10, 10, 10, 0);
+         this.getContentPane().add(this.dealerLabels[i], gridConstraints);
+      }
+
+      this.playerLabel.setFont(new Font("Arial", 1, 14));
+      gridConstraints = new GridBagConstraints();
+      gridConstraints.gridx = 4;
+      gridConstraints.gridy = 3;
+      gridConstraints.gridwidth = 6;
+      gridConstraints.anchor = 17;
+      gridConstraints.insets = new Insets(10, 10, 10, 0);
+      this.getContentPane().add(this.playerLabel, gridConstraints);
+      this.playerTextField.setPreferredSize(new Dimension(130, 30));
+      this.playerTextField.setFont(new Font("Comic Sans MS", 0, 14));
+      this.playerTextField.setBackground(new Color(255, 255, 128));
+      this.playerTextField.setText("cartes du joueur");
+      this.playerTextField.setForeground(Color.BLUE);
+      this.playerTextField.setEditable(true);
+      gridConstraints = new GridBagConstraints();
+      gridConstraints.gridx = 12;
+      gridConstraints.gridy = 4;
+      gridConstraints.gridwidth = 2;
+      gridConstraints.insets = new Insets(10, 10, 10, 10);
+      this.getContentPane().add(this.playerTextField, gridConstraints);
+
+      for(i = 0; i < 6; ++i) {
+         this.playerLabels[i] = new JLabel();
+         this.playerLabels[i].setPreferredSize(new Dimension(60, 100));
+         this.playerLabels[i].setBorder(BorderFactory.createLineBorder(Color.BLACK));
+         gridConstraints = new GridBagConstraints();
+         gridConstraints.gridx = i;
+         gridConstraints.gridy = 4;
+         gridConstraints.insets = new Insets(10, 10, 10, 0);
+         this.getContentPane().add(this.playerLabels[i], gridConstraints);
+      }
+
+      gridConstraints = new GridBagConstraints();
+      gridConstraints.gridx = 7;
+      gridConstraints.gridy = 1;
+      gridConstraints.gridwidth = 2;
+      gridConstraints.insets = new Insets(10, 10, 10, 10);
+      this.dealerScoreLabel = new JLabel("Score dealer : ?");
+      this.dealerScoreLabel.setHorizontalAlignment(0);
+      this.getContentPane().add(this.dealerScoreLabel, gridConstraints);
+      gridConstraints = new GridBagConstraints();
+      gridConstraints.gridx = 7;
+      gridConstraints.gridy = 4;
+      gridConstraints.gridwidth = 2;
+      gridConstraints.insets = new Insets(10, 10, 10, 10);
+      this.playerScoreLabel = new JLabel("Score joueur : 0");
+      this.playerScoreLabel.setHorizontalAlignment(0);
+      this.getContentPane().add(this.playerScoreLabel, gridConstraints);
+      gridConstraints = new GridBagConstraints();
+      gridConstraints.gridx = 3;
+      gridConstraints.gridy = 8;
+      gridConstraints.gridwidth = 8;
+      gridConstraints.insets = new Insets(20, 20, 20, 20);
+      this.statsBorder.setSize(new Dimension(350, 350));
+      this.statsLabel.setHorizontalAlignment(0);
+      this.statsLabel.setFont(new Font("SansSerif", 1, 14));
+      this.statsLabel.setPreferredSize(new Dimension(300, 300));
+      this.statsBorder.add(this.createImageBorder(), gridConstraints);
+      this.getContentPane().add(this.statsBorder, gridConstraints);
+      gridConstraints = new GridBagConstraints();
+      gridConstraints.gridx = -2;
+      gridConstraints.gridy = 0;
+      gridConstraints.gridwidth = 4;
+      gridConstraints.insets = new Insets(10, 10, 10, 10);
+      this.statusLabel = new JLabel("Bienvenue au Blackjack !");
+      this.statusLabel.setHorizontalAlignment(0);
+      this.statusLabel.setFont(new Font("SansSerif", 1, 16));
+      this.getContentPane().add(this.statusLabel, gridConstraints);
+      this.hitButton.addActionListener((e) -> {
+         this.hit();
+      });
+      this.hitButton.setText("Tirer");
+      this.hitButton.setFont(new Font("Arial", 1, 14));
+      gridConstraints = new GridBagConstraints();
+      gridConstraints.gridx = 0;
+      gridConstraints.gridy = 6;
+      gridConstraints.insets = new Insets(10, 0, 10, 0);
+      this.getContentPane().add(this.hitButton, gridConstraints);
+      this.standButton.addActionListener((e) -> {
+         this.stand();
+      });
+      this.standButton.setText("Garder");
+      this.standButton.setFont(new Font("Arial", 1, 14));
+      gridConstraints = new GridBagConstraints();
+      gridConstraints.gridx = 1;
+      gridConstraints.gridy = 6;
+      gridConstraints.insets = new Insets(10, 0, 10, 0);
+      this.getContentPane().add(this.standButton, gridConstraints);
+      this.restartButton.addActionListener((e) -> {
+         this.restartGame();
+      });
+      this.restartButton.setText("Partager");
+      this.restartButton.setFont(new Font("Arial", 1, 14));
+      gridConstraints = new GridBagConstraints();
+      gridConstraints.gridx = 2;
+      gridConstraints.gridy = 6;
+      gridConstraints.insets = new Insets(10, 0, 10, 0);
+      this.getContentPane().add(this.restartButton, gridConstraints);
+      this.pack();
+      Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+      this.setBounds((int)(0.5 * (double)(screenSize.width - this.getWidth())), (int)(0.5 * (double)(screenSize.height - this.getHeight())), this.getWidth(), this.getHeight());
+      this.distributeInitialCards();
+      this.newMenuItem.doClick();
+      this.setVisible(true);
+   }
+
+   private void distributeInitialCards() {
+      this.playerHand.clear();
+      this.dealerHand.clear();
+
+      for(int i = 0; i < 6; ++i) {
+         this.playerLabels[i].setIcon((Icon)null);
+         this.dealerLabels[i].setIcon((Icon)null);
+      }
+
+      this.playerHand.add(this.deck.drawCard());
+      this.playerHand.add(this.deck.drawCard());
+      this.dealerHand.add(this.deck.drawCard());
+      this.dealerHand.add(this.deck.drawCard());
+      this.updateHandsDisplay(false);
+      this.updateScoreLabels(false);
+      this.statusLabel.setText("À vous de jouer !");
+   }
+
+   private void updateHandsDisplay(boolean showDealerAll) {
+      int i;
+      for(i = 0; i < this.playerHand.size(); ++i) {
+         this.playerLabels[i].setIcon(((Card)this.playerHand.get(i)).getImage());
+      }
+
+      for(i = 0; i < this.dealerHand.size(); ++i) {
+         if (i != 0 && !showDealerAll) {
+            this.dealerLabels[i].setIcon(new ImageIcon("classes/Blackjack copy.jpg"));
+         } else {
+            this.dealerLabels[i].setIcon(((Card)this.dealerHand.get(i)).getImage());
+         }
+      }
+
+   }
+
+   private void updateScoreLabels(boolean showDealerAll) {
+      int playerScore = this.calculateScore(this.playerHand);
+      int dealerScore = this.calculateScore(this.dealerHand);
+      this.playerScoreLabel.setText("Score joueur : " + playerScore);
+      this.dealerScoreLabel.setText("Score dealer : " + (showDealerAll ? dealerScore : "?"));
+   }
+
+   private void hit() {
+      if (this.playerHand.size() < 6) {
+         this.playerHand.add(this.deck.drawCard());
+         this.updateHandsDisplay(false);
+         this.updateScoreLabels(false);
+         int score = this.calculateScore(this.playerHand);
+         if (score > 21) {
+            ++this.losses;
+            this.endRound("\ud83d\udca5 Vous avez dépassé 21 ! Vous perdez \ud83d\ude22");
+         }
+      }
+
+   }
+
+   private void stand() {
+      while(this.calculateScore(this.dealerHand) < 17) {
+         this.dealerHand.add(this.deck.drawCard());
+      }
+
+      this.updateHandsDisplay(true);
+      this.updateScoreLabels(true);
+      int playerScore = this.calculateScore(this.playerHand);
+      int dealerScore = this.calculateScore(this.dealerHand);
+      if (dealerScore <= 21 && playerScore <= dealerScore) {
+         if (dealerScore == playerScore) {
+            ++this.ties;
+            this.endRound(" Égalité (" + playerScore + ")");
+         } else {
+            ++this.losses;
+            this.endRound(" Le dealer gagne (" + dealerScore + " contre " + playerScore + ")");
+         }
+      } else {
+         ++this.wins;
+         this.endRound(" Vous gagnez ! (" + playerScore + " contre " + dealerScore + ")");
+      }
+
+   }
+
+   private void restartGame() {
+      this.playerHand.clear();
+      this.dealerHand.clear();
+      this.deck.shuffle();
+      this.distributeInitialCards();
+      this.hitButton.setEnabled(true);
+      this.standButton.setEnabled(true);
+      this.statusLabel.setText("Nouvelle manche ! À vous de jouer.");
+      this.updateStats();
+   }
+
+   private void endRound(String message) {
+      this.updateHandsDisplay(true);
+      this.updateScoreLabels(true);
+      this.statusLabel.setText(message);
+      this.hitButton.setEnabled(false);
+      this.standButton.setEnabled(false);
+      this.updateStats();
+   }
+
+   private void updateStats() {
+      this.label.setText(this.getStatsText());
+   }
+
+   private String getStatsText() {
+      return "<html><center><b>Statistiques </b><br>Victoires : " + this.wins + "<br>" + "Défaites : " + this.losses + "<br>" + "Égalités : " + this.ties + "</center></html>";
+   }
+
+   private JLabel createImageBorder() {
+      this.label.setFont(new Font("Arial", 1, 18));
+      Border blueline = BorderFactory.createLineBorder(Color.green);
+      TitledBorder title = BorderFactory.createTitledBorder(blueline, "statistiques");
+      title.setTitleJustification(2);
+      this.label.setBorder(title);
+      this.label.setOpaque(true);
+      this.label.setBackground(Color.YELLOW);
+      this.label.setLabelFor(this.statusLabel);
+      this.updateStats();
+      this.getContentPane().add(this.label);
+      return this.label;
+   }
+
+   private int calculateScore(List<Card> hand) {
+      int total = 0;
+      int aceCount = 0;
+      Iterator var5 = hand.iterator();
+
+      while(var5.hasNext()) {
+         Card c = (Card)var5.next();
+         total += c.getValue();
+         if (c.getRank().equals("A")) {
+            ++aceCount;
+         }
+      }
+
+      while(total > 21 && aceCount > 0) {
+         total -= 10;
+         --aceCount;
+      }
+
+      return total;
+   }
+
+   private void newMenuItemActionPerformed(ActionEvent e) {
+      this.restartGame();
+   }
+
+   private void exitForm(WindowEvent evt) {
+      System.exit(0);
+   }
+
+   private void exitMenuItemActionPerformed(ActionEvent e) {
+      System.exit(0);
+   }
+
+   public static void changeSize(String inImg, String outImg, int w, int h) throws IOException {
+      File f = new File(inImg);
+      BufferedImage inputImage = ImageIO.read(f);
+      BufferedImage img = new BufferedImage(w, h, inputImage.getType());
+      Graphics2D g = img.createGraphics();
+      g.drawImage(inputImage, 0, 0, w, h, (ImageObserver)null);
+      g.dispose();
+      String name = outImg.substring(outImg.lastIndexOf(".") + 1);
+      ImageIO.write(img, name, new File(outImg));
+   }
+
+   public static void main(String[] args) {
+      SwingUtilities.invokeLater(() -> {
+         BlackjackUI game = new BlackjackUI();
+         game.setVisible(true);
+      });
+   }
+}
