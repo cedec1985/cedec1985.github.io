@@ -31,5 +31,5 @@
     <jar href="lib/javaws.jar"/>
   </resources>
   <!-- Définition de la classe principale de l'application -->
-  <application-desc main-class="src.classes.BlackjackUI"/>
+  <application-desc main-class="classes.BlackjackUI"/>
 </jnlp>
