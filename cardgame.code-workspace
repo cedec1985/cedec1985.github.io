@@ -1,0 +1,71 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"java.project.sourcePaths": [
+			".",
+			"src",
+			"classes"
+		],
+		"java.project.referencedLibraries": [
+			"c:\\cardgame\\lib\\org-netbeans-modules-javascript2-doc.jar",
+			"c:\\cardgame\\lib\\jaxb-jxc.jar",
+			"c:\\cardgame\\lib\\jakarta.xml.bind-api.jar",
+			"c:\\cardgame\\lib\\org-netbeans-modules-javascript-cdtdebug.jar",
+			"c:\\cardgame\\lib\\org-netbeans-modules-javascript-cdtdebug-ui.jar",
+			"c:\\cardgame\\lib\\regex-24.0.0.jar",
+			"c:\\cardgame\\lib\\org-netbeans-modules-javascript2-knockout.jar",
+			"c:\\cardgame\\lib\\javafx-mx.jar",
+			"c:\\cardgame\\lib\\tools.jar",
+			"c:\\cardgame\\lib\\org-netbeans-modules-languages-apacheconf.jar",
+			"c:\\cardgame\\lib\\xml-apis-1.4.01.jar",
+			"c:\\cardgame\\lib\\dt.jar",
+			"c:\\cardgame\\lib\\org-netbeans-modules-javascript2-editor.jar",
+			"c:\\cardgame\\lib\\org-netbeans-modules-javascript2-jade.jar",
+			"c:\\cardgame\\lib\\js-scriptengine-24.0.0.jar",
+			"c:\\cardgame\\lib\\org-netbeans-modules-javascript2-html.jar",
+			"c:\\cardgame\\lib\\jconsole.jar",
+			"c:\\cardgame\\lib\\org-netbeans-modules-javascript-v8debug-ui.jar",
+			"c:\\cardgame\\lib\\org-netbeans-modules-javascript2-sdoc.jar",
+			"c:\\cardgame\\lib\\org-netbeans-libs-graaljs.jar",
+			"c:\\cardgame\\lib\\org-netbeans-modules-javascript2-model.jar",
+			"c:\\cardgame\\lib\\org-netbeans-modules-javascript-grunt.jar",
+			"c:\\cardgame\\lib\\dd-plist.jar",
+			"c:\\cardgame\\lib\\org-netbeans-modules-javascript2-extdoc.jar",
+			"c:\\cardgame\\lib\\libs.jstestdriver-ext.jar",
+			"c:\\cardgame\\lib\\icu4j-24.0.0.jar",
+			"c:\\cardgame\\lib\\org-netbeans-modules-javascript2-jsdoc.jar",
+			"c:\\cardgame\\lib\\org-netbeans-modules-javascript-cdnjs.jar",
+			"c:\\cardgame\\lib\\org-netbeans-modules-javascript2-source-query.jar",
+			"c:\\cardgame\\lib\\org-netbeans-modules-javascript-karma.jar",
+			"c:\\cardgame\\lib\\org-netbeans-modules-javascript2-extjs.jar",
+			"c:\\cardgame\\lib\\org-netbeans-modules-javascript-bower.jar",
+			"c:\\cardgame\\lib\\org-netbeans-modules-web-javascript-debugger.jar",
+			"c:\\cardgame\\lib\\org-netbeans-modules-javascript2-jquery.jar",
+			"c:\\cardgame\\lib\\org-netbeans-modules-javascript-gulp.jar",
+			"c:\\cardgame\\lib\\org-netbeans-modules-javascript2-nodejs.jar",
+			"c:\\cardgame\\lib\\sa-jdi.jar",
+			"c:\\cardgame\\lib\\org-netbeans-modules-javascript-nodejs.jar",
+			"c:\\cardgame\\lib\\org-netbeans-modules-javascript-jstestdriver.jar",
+			"c:\\cardgame\\lib\\org-netbeans-modules-javascript2-prototypejs.jar",
+			"c:\\cardgame\\lib\\jakarta.activation.jar",
+			"c:\\cardgame\\lib\\org-netbeans-modules-javascript-v8debug.jar",
+			"c:\\cardgame\\lib\\org-netbeans-modules-javascript2-kit.jar",
+			"c:\\cardgame\\lib\\org-netbeans-modules-javascript2-requirejs.jar",
+			"c:\\cardgame\\lib\\js-language-24.0.0.jar",
+			"c:\\cardgame\\lib\\jaxb-impl.jar",
+			"c:\\cardgame\\lib\\jaxb-xjc.jar",
+			"c:\\cardgame\\lib\\org-netbeans-modules-javascript2-json.jar",
+			"c:\\cardgame\\lib\\org-netbeans-modules-javascript2-types.jar",
+			"c:\\cardgame\\lib\\org-netbeans-modules-javascript2-react.jar",
+			"c:\\cardgame\\lib\\js-launcher-24.0.0.jar",
+			"c:\\cardgame\\lib\\org-netbeans-modules-javascript2-lexer.jar",
+			"c:\\cardgame\\lib\\ant-javafx.jar",
+			"c:\\cardgame\\lib\\jaxb-core.jar",
+			"c:\\cardgame\\lib\\packager.jar"
+		]
+	}
+}
