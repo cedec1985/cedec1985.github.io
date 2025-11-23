@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Main-Class: classes.BlackjackUI
+SplashScreen-Image: ressources/JavaSwing.jpg
+
+
+
+
+
