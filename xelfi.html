@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CheerpJ test</title>
+  </head>
+  <script src="https://cjrtnc.leaningtech.com/4.2/loader.js"></script>
+  </head>
+  <body>
+    <style>
+  html,
+  body {
+    margin: 0;
+  }
+
+  #container {
+    width: 100vw;
+    height: 100svh;
+  }
+</style>
+    <div id="container"></div>
+    <script type="module">
+        await cheerpjInit({version:8});
+        cheerpjCreateDisplay(-1, -1, document.getElementById("container"));
+        await cheerpjRunJar(
+          "/app/cardgame.jar",
+        );
+    </script>
+  <a href ="https://cedec1985.github.io/xelfi.jnlp">Lancer</a>
+  </body>
+</html>
