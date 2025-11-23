@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- External DOCTYPE removed to avoid fetching the remote DTD which caused an error -->
-<jnlp spec="1.0+" codebase="https://cedec1985.github.io/cardgame" href="xelfi.jnlp">
+<jnlp spec="1.0+" codebase="https://cedec1985.github.io" href="xelfi.jnlp">
   <information>
     <title>Mon Application Java</title>
     <vendor>Ton Nom / Organisation</vendor>
