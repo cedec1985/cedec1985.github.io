@@ -16,6 +16,7 @@ L’objectif est de moderniser l’architecture du site, améliorer ses performa
 - **Blogger** (site source)
 - **Jekyll** (générateur de site statique)
 - **Markdown**
+- **Liquid**
 - **Git & GitHub**
 - **GitHub Pages**
 - **HTML / CSS**
