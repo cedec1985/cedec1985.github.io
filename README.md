@@ -20,6 +20,15 @@ L’objectif est de moderniser l’architecture du site, améliorer ses performa
 - **GitHub Pages**
 - **HTML / CSS**
 
-## Structure du projet
+## Prérequis
 
+Avant de commencer, assure-toi d’avoir installé :
 
+- Git
+- Ruby (version recommandée par Jekyll)
+- Bundler  
+- Un compte GitHub
+
+```bash
+ruby -v
+gem install bundler jekyll
