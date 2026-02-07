@@ -30,8 +30,7 @@ url : https://cedec1985.github.io
 twitter_username: jekyllrb
 github_username:  cedec1985
 # Build settings
-theme: minima
-plugins:
+theme: jekyll-theme-minimal
   - jekyll-feed
 
 # Exclude from processing.
@@ -53,3 +52,4 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
