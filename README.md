@@ -1,5 +1,3 @@
-# Migration Blogger vers Jekyll avec GitHub Pages
-
 ## Description du projet
 
 Ce projet consiste à migrer un site existant hébergé sur **Blogger** vers un site statique basé sur **Jekyll**, puis à le déployer automatiquement via **GitHub Pages**.  
