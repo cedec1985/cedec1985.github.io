@@ -25,11 +25,17 @@ L’objectif est de moderniser l’architecture du site, améliorer ses performa
 
 Avant de commencer, assure-toi d’avoir installé :
 
-- Git
-- Ruby (version recommandée par Jekyll)
-- Bundler  
-- Un compte GitHub
+Ruby version 2.7.0 ou plus
+RubyGems
+GCC and Make
 
 ```bash
-ruby -v
 gem install bundler jekyll
+jekyll new myblog
+cd myblog
+bundle exec jekyll serve
+
+## Instructions 
+
+Installer les prérequis (voir sites d'installations respectifs)
+Installer les gems Jekyll and Bundler
