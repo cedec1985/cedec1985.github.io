@@ -35,7 +35,3 @@ jekyll new myblog
 cd myblog
 bundle exec jekyll serve
 
-## Instructions 
-
-Installer les prérequis (voir sites d'installations respectifs)
-Installer les gems Jekyll and Bundler
