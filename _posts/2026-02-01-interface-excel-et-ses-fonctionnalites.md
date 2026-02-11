@@ -33,7 +33,6 @@ Plus haut encore se trouve la « barre d'outils Accès rapide » à partir de la
 ### La barre d'outils Accès rapide
 
 La barre d'Accès rapide marche comme la barre de lancement rapide de Microsoft Windows. Elle permet l'accès rapide aux fonctionnalités globalement les plus utilisées de Word, en règle générale.
-
 L'icône Excel ne fait pas partie de la barre d'accès rapide. Elle simule simplement le clic droit sur la barre de titre. Par défaut, les fonctionnalités suivantes sont déjà présentes :
 
 - Enregistrer (dont le raccourci clavier est Ctrl + S, notez-le !) : permet d'enregistrer votre document ;
@@ -47,15 +46,12 @@ Un conseil que je peux vous donner : éviter de surcharger votre barre d'accès 
 ## La barre de formules
 
 Entre votre zone de travail et le ruban se trouve un champ très important : la « barre de formules ».
-
 Cette zone est très importante et mérite un chapitre pour elle toute seule. Retenez que ce champ très long se nomme « barre de formules ».
-
 Notez néanmoins que la liste déroulante à gauche du champ ne fait pas partie de la barre de formules.
 
 ## La barre d'état
 
 En dessous de votre zone de travail se trouve la barre d'état.
-
 ![Image utilisateur](https://www.clic-formation.net/images/excel/01_interface_excel_fichiers/image008.jpg)
 
 Dans cette barre se trouvent les « ascenseurs », entourés là encore de nombreux autres boutons. Ces ascenseurs vous permettent de vous déplacer dans le quadrillage. Leur utilisation n'est pas très compliquée, il suffit de cliquer sur les flèches pour bouger.

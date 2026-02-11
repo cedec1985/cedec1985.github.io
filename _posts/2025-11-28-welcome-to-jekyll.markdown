@@ -19,8 +19,16 @@ def print_hi(name)
   puts "Hi, #{name}"
 end
 print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
+
+{% assign oneComment = "Liquid" %}
+{% comment %}
+{{oneComment}} is an open-source template language created by Shopify and written in Ruby.
+{% endcomment %}
+
+Check out the official site [liquid][Liquid]. It is safe, customer-facing template language for flexible web apps.
+[Liquid]: <https://shopify.github.io>
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
