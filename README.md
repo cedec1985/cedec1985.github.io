@@ -1,6 +1,6 @@
 ## Description du projet
 
-Ce projet consiste à migrer un site existant hébergé sur **Blogger**[Visiter le site Blogger] (https://testavecexcel.blogspot.com)
+Ce projet consiste à migrer un site existant hébergé sur **Blogger**(https://testavecexcel.blogspot.com)
 vers un site statique basé sur **Jekyll**, puis à le déployer automatiquement via **GitHub Pages**.  
 L’objectif est de moderniser l’architecture du site, améliorer ses performances, faciliter la maintenance et bénéficier d’un hébergement gratuit et fiable 
  
