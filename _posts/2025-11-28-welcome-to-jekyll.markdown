@@ -27,15 +27,15 @@ print_hi('Tom')
 {{oneComment}} is a open source template language created by Shopify and written in Ruby.
 {% endcomment %}
 
-{% # for i in (1..3) %}
-  {{i}}
+{% # for i in (1..3) -%}
+  {{ i }}
 {% # endfor %}
 {%
-############
+  ############
 
   # Liquid and Markdown are used by      # Jekyll and that are very useful 👌 
   
-############
+  ############
 %}
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
