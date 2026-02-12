@@ -30,7 +30,7 @@ Liquid and Markdown are generally used by Jekyll, that are useful tools to build
 {% endcomment %}
 
 Check out the official site [Liquid][liquid]. It is safe, customer-facing template language for flexible web apps.
-{{variable}} and Markdown are generally used by Jekyll, that are useful tools to build dynamic web apps 👌
+{{page.variable}} and Markdown are generally used by Jekyll, that are useful tools to build dynamic web apps 👌
 
 [liquid]: https://shopify.github.io
 
