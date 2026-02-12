@@ -29,7 +29,7 @@ print_hi('Tom')
 
 {% # for i in (1..3) %}
   {{i}}
-{{% # endfor %}}
+{% # endfor %}
 
 {%
 
