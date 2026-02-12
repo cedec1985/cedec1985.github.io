@@ -1,6 +1,9 @@
 ---
 layout: post
 title: "Effectuer un retour à la ligne"
+category : Les bases de Excel
+collection : tutorials
+url : https://cedec1985.github.io/2026/02/09/effectuer-un-retour-a-la-ligne.html
 date: 2026-02-09 11:09:25 +0100
 ---
 

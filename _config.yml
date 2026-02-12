@@ -63,3 +63,13 @@ gist:
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
+
+--- # Collections
+
+collections:
+  tutorials:
+    order:
+      - 2025-11-28-welcome-to-jekyll.md
+      - 2026-02-01-interface-excel-et-ses-fonctionnalites.md
+      - 2026-02-09-effectuer-un-retour-a-la-ligne.md
+    output: true
