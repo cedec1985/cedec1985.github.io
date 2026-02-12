@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Interface Excel et ses fonctionnalités"
-category : Les bases de Excel
 collection : tutorials
 url : https://cedec1985.github.io/2026/02/01/interface-excel-et-ses-fonctionnalites.html
 date: 2026-02-01 14:41:25 +0100
