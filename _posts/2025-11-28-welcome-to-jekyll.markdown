@@ -3,6 +3,7 @@ layout: post
 title:  "Bienvenue sur Jekyll!"
 date:   2025-11-28 11:09:25 +0100
 categories: jekyll update
+variable : liquid
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
@@ -29,6 +30,7 @@ Liquid and Markdown are generally used by Jekyll, that are useful tools to build
 {% endcomment %}
 
 Check out the official site [Liquid][liquid]. It is safe, customer-facing template language for flexible web apps.
+{{variable}} and Markdown are generally used by Jekyll, that are useful tools to build dynamic web apps 👌
 
 [liquid]: https://shopify.github.io
 
