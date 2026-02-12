@@ -27,23 +27,22 @@ print_hi('Tom')
 {{oneComment}} is an open-source template language created by Shopify and written in Ruby.
 {% endcomment %}
 
-{% # for i in (1..3) -%}
+{% # for i in (1..3) %}
   {{i}}
 {{% # endfor %}}
 
 {%
 
-########################################################################
+##
 
-  # Liquid and Markdown are generally used by Jekyll, that are useful 👌
-  # tools to build dynamic web apps
-
-########################################################################
-
+    # Liquid and Markdown are generally used by Jekyll, that are useful 👌
+    # tools to build dynamic web apps
 %}
 
 Check out the official site [Liquid][liquid]. It is safe, customer-facing template language for flexible web apps.
+
 [liquid]: <https://shopify.github.io>
+
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
