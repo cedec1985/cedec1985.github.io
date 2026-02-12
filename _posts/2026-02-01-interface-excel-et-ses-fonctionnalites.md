@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Un deuxième article"
+title: "Interface Excel et ses fonctionnalités"
 date: 2026-02-01 14:41:25 +0100
 ---
 

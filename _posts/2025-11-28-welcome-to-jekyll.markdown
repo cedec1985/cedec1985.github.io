@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Bienvenue sur Jekyll!"
 date:   2025-11-28 11:09:25 +0100
 categories: jekyll update
 ---
@@ -35,8 +35,8 @@ print_hi('Tom')
 
 ########################################################################
 
-    # Liquid and Markdown are generally used by Jekyll, that are useful 👌
-    # tools to build dynamic web apps.
+  # Liquid and Markdown are generally used by Jekyll, that are useful 👌
+  # tools to build dynamic web apps.
 
 ########################################################################
 
