@@ -42,8 +42,6 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 
 {% for tutorial in site.tutorials %}
   <h2>
-   <a href="{{ tutorial.url }}">
     Titre du post :  {{ tutorial.title }}  Collection du post : - {{tutorial.collection}}
-   </a>
   </h2>
 {% endfor %}
