@@ -3,7 +3,6 @@ layout: post
 title: "Interface Excel et ses fonctionnalités"
 collection : tutorials
 permalink : /interface-excel-et-ses-fonctionnalites.html
-author : CD
 date: 2026-02-01 14:41:25 +0100
 ---
 

@@ -3,7 +3,6 @@ layout: post
 title: "Effectuer un retour à la ligne"
 collection : tutorials
 permalink : /effectuer-un-retour-a-la-ligne.html
-author : CD
 date: 2026-02-09 11:09:25 +0100
 ---
 

@@ -20,8 +20,7 @@
 
 title:  de Blogger à Jekyll
 email: ceddec550@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
- Création d'un blog Jekyll à partir d'un export de Blogger et déploiement sur GitHub Pages.
+description: Creation d'un blog Jekyll à partir d'un export de Blogger et déploiement sur GitHub Pages.
 domain: cedec1985.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url : https://cedec1985.github.io
@@ -71,5 +70,13 @@ collections:
       - 2025-11-28-welcome-to-jekyll.md
       - 2026-02-01-interface-excel-et-ses-fonctionnalites.md
       - 2026-02-09-effectuer-un-retour-a-la-ligne.md
-
     output: true
+
+#defaults:
+ # - 
+    #scope: 
+      #path: "page404.html"
+    #values:
+      #layout: "page404"
+      #author: "CédricD"
+      #comments: false
