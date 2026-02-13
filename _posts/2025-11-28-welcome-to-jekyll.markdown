@@ -42,7 +42,7 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
 
-{% for tutorial in site.tutorials %}
+{% for tutorial in post.tutorials %}
   <h2>
     Titre du post :  {{ tutorial.title }}, Collection du post : {{tutorial.collection}}, Auteur du post : {{tutorial.author}}
   </h2>
