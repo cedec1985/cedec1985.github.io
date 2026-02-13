@@ -26,7 +26,6 @@ domain: cedec1985.github.io       # if you want to force HTTPS, specify the doma
 baseurl: "" # the subpath of your site, e.g. /blog
 url : https://cedec1985.github.io
 github_username:  cedec1985
-linkedin_username: cedricdecraim
 # Build settings
 theme: minima
 plugins: 
@@ -72,4 +71,5 @@ collections:
       - 2025-11-28-welcome-to-jekyll.md
       - 2026-02-01-interface-excel-et-ses-fonctionnalites.md
       - 2026-02-09-effectuer-un-retour-a-la-ligne.md
+
     output: true
