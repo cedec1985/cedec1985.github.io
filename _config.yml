@@ -25,6 +25,7 @@ domain: cedec1985.github.io       # if you want to force HTTPS, specify the doma
 baseurl: "" # the subpath of your site, e.g. /blog
 url : https://cedec1985.github.io
 github_username:  cedec1985
+linkedin_username: cedricdecraim 
 # Build settings
 theme: minima
 plugins: 
@@ -79,4 +80,5 @@ collections:
     #values:
       #layout: "page404"
       #author: "CédricD"
+
       #comments: false
