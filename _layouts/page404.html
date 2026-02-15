@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
  <!-- Redirect to home page after 5 seconds
-  <meta name="viewport" content="5;url={{ '/' | relative_url }}" http-equiv="refresh">
+  <meta name="viewport" content="5;url=/" http-equiv="refresh">
  -->
   <title>Page non trouvée</title>
-  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+  <link rel="stylesheet" href="/assets/main.css">
   
   <style>
     :root {
@@ -18,13 +18,13 @@
 
     * {
       box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+      margin: 200px;
+      padding: 50;
       font-family: system-ui, -apple-system, sans-serif;
     }
     .container {
-      max-width: 500px;
-      padding: 2rem;
+      max-width: 700px;
+      padding: 3rem;
     }
     @media (max-width: 480px) {
       h1 {
@@ -53,7 +53,14 @@ a.btn404:hover {
 <body class="page-404">
 
   <main class="container">
-    {{ content }}
+    <p><strong>ERREUR 404</strong></p>
+
+<p><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqaftqgGT72Y4X6yaeTJtlKkddL1x056WKnKMFSK-0Qmj-iCUJP0Ei5SCW78QxvD8Zb9Rwwf8QzzAv_CcE4WklgxOKhNCcX6Up7WTpm2s9AXx1CI6iUlIHSHRUYYvjjqilZNdrJIb6aljuU68cjIATtzms3Z-Xu26xlRUHiYPWjdav-9cd7ghgsooTU24/w640-h426/5664.jpg" alt="5664" /></p>
+
+<p><strong>ERREUR 404</strong> “Houston, nous avons un problème.”??</p>
+<p>Oups… Cette page n'existe pas.</p>
+<p><a href="/" class="btn404">Retour à l’accueil</a></p>
+
   </main>
 
 </body>
