@@ -197,12 +197,3 @@ table td { border: 1px solid #e8e8e8; }
 
 /** 404 page */
 
-.container {
-  display: flex;
-  flex-direction: column; /* empile image, texte, bouton */
-  justify-content: center; /* centre verticalement */
-  align-items: center; /* centre horizontalement */
-  text-align: center; /* centre le texte */
-  min-height: 100vh; /* occupe toute la hauteur de la page */
-  gap: 20px; /* espace entre les éléments */
-}
