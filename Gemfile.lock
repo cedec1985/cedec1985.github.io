@@ -133,6 +133,7 @@ GEM
       jekyll (>= 3.9, < 4.0)
       jekyll-commonmark (~> 1.4.0)
       rouge (>= 2.0, < 5.0)
+    jekyll-datapage-generator (1.4.0)
     jekyll-default-layout (0.1.5)
       jekyll (>= 3.0, < 5.0)
     jekyll-feed (0.17.0)
@@ -288,6 +289,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages (~> 232)
   http_parser.rb (~> 0.6.0)
+  jekyll-datapage-generator
   jekyll-feed (~> 0.12)
   jekyll-import (~> 0.25.0)
   liquid (~> 4.0)
@@ -329,6 +331,7 @@ CHECKSUMS
   jekyll-coffeescript (1.2.2) sha256=894e71c2071a834e76eb7e8044944440a0c81c2c7092532fed1503b13d331110
   jekyll-commonmark (1.4.0) sha256=1731e658fe09ce040271e6878f83ad45bbf8d17b10ad03bf343546cca30f4844
   jekyll-commonmark-ghpages (0.5.1) sha256=d56722f23393e45625e6e1bac6d3c64bb5f5cdf6ca547338160536d61c27a4a4
+  jekyll-datapage-generator (1.4.0) sha256=e5778bccbe8807f4ef47a45fffb362d2247db2a01960b9db86be7f3132f18b87
   jekyll-default-layout (0.1.5) sha256=c626be4e4a5deafca123539da2cd22ff873be350cafd4da134039efdf24320af
   jekyll-feed (0.17.0) sha256=689aab16c877949bb9e7a5c436de6278318a51ecb974792232fd94d8b3acfcc3
   jekyll-gist (1.5.0) sha256=495b6483552a3e2975a2752964ea7acddd545bc6e13ce2be15a50cec8d4c9f0f

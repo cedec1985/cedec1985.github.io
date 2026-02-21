@@ -19,6 +19,7 @@ group :jekyll_plugins do
 end
 gem "jekyll-import", "~> 0.25.0"
 gem 'liquid', '~> 4.0'
+gem 'jekyll-datapage-generator'
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.

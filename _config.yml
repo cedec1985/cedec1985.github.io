@@ -82,3 +82,9 @@ collections:
       #author: "CédricD"
 
       #comments: false
+
+page_gen:
+  - data: "settings"
+    template: "mise en page"
+    name: "accueil"
+    dir: "page d'accueil"
