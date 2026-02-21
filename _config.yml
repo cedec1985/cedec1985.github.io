@@ -86,5 +86,5 @@ collections:
 page_gen:
   - data: "settings"
     template: "mise en page"
-    name: "accueil"
-    dir: "page d'accueil"
+    name: "title"
+    dir: "settings"
