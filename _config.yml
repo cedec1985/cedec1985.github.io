@@ -72,7 +72,6 @@ collections:
       - 2026-02-01-interface-excel-et-ses-fonctionnalites.md
       - 2026-02-09-effectuer-un-retour-a-la-ligne.md
     output: true
-    permalink: /:collection/:name/
 
 #defaults:
  # - 
