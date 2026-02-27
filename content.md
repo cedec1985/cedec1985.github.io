@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "le contenu du blog"
+title: le contenu du blog
 permalink : /content.html/
 ---
 
