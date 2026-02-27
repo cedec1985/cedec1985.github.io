@@ -23,5 +23,7 @@ permalink : /content.html/
 {% endfor %}
     <div>
       <p>Retour à l'accueil</p>
+
     [Click here]({{ "/index.html" | relative_url }})
+    
     </div>
