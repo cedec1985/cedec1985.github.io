@@ -4,9 +4,7 @@ title: contenu du blog
 permalink : /content.html/
 ---
 
-  <main class="container">
-
- ![Logo Excel]({{ "/assets/logo.jpg" | relative_url }})
+ ![Logo Excel]({{ "assets/logo.jpg" | relative_url }})
 
 {% for item in site.data.settings %}
     {{content}}
@@ -24,6 +22,5 @@ permalink : /content.html/
 {% endfor %}
     <div>
       <p>Retour à l'accueil</p>
-    [Click here]({{ "/" | relative_url }})
+    [Click here]({{ "/index.html" | relative_url }})
     </div>
-  </main>
