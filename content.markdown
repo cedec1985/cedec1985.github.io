@@ -5,9 +5,9 @@ permalink : /content.html/
 ---
 
   <main class="container">
-<p>
-  <img src="{{ 'logiciel-excel.avif' | asset_url }}" alt="Logo Excel">
-</p>
+
+ ![Logo Excel]({{ "/assets/logo.jpg" | relative_url }})
+
 {% for item in site.data.settings %}
     {{content}}
     <strong>{{ item.blog_name }}</strong>
