@@ -6,7 +6,7 @@ permalink : /content.html/
 
   <main class="container">
 <p>
-  <img src="{{ "/assets/logo.jpg" | relative_url }}">
+  <img src={{ "/assets/logo.jpg" | relative_url }}>
 </p>
 {% for item in site.data.settings %}
     {{content}}
