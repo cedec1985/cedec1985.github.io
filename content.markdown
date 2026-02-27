@@ -24,6 +24,6 @@ permalink : /content.html/
     <div>
       <p>Retour à l'accueil</p>
 
-[Click here]({{ "/index.html" | relative_url }})
+[Click here]({{ "/" | relative_url }})
 
     </div>
