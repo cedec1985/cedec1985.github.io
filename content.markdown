@@ -6,7 +6,7 @@ permalink : /content.html/
 
   <main class="container">
 
- ![Logo Excel]({{ "/assets/logo.jpg" | relative_url }})
+ ![Logo Excel]({{ "logo.jpg" | relative_url }})
 
 {% for item in site.data.settings %}
     {{content}}
