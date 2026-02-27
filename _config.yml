@@ -90,3 +90,4 @@ page_gen:
     name: "page d'accueil"
     dir: "settings"
 
+show_downloads: true
