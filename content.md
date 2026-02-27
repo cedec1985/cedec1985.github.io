@@ -4,10 +4,10 @@ title: contenu du blog
 permalink : /content.html/
 ---
 
-![Logo](http://www.assistantepro.com/images/p/excel-2-1590246387.jpg)
-
   <main class="container">
-   
+<p>
+  <img src="{{ "/assets/logo.jpg" | relative_url }}">
+</p>
 {% for item in site.data.settings %}
     {{content}}
     <strong>{{ item.blog_name }}</strong>
@@ -22,4 +22,8 @@ permalink : /content.html/
       </p>
     </div>
 {% endfor %}
+    <div>
+      <p>Retour à l'accueil</p>
+    [Click here]({{ "/" | relative_url }})
+    </div>
   </main>
