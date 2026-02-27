@@ -4,7 +4,8 @@ title: contenu du blog
 permalink : /content.html/
 ---
 
- ![Logo Excel]({{ "assets/logo.jpg" | relative_url }})
+[Logo Excel]({{ "assets/logo.jpg" | relative_url }})
+![Logo Excel](https://static0.makeuseofimages.com/wordpress/wp-content/uploads/2022/03/excel-logo-blue.jpg?q=50&fit=crop&w=1488&h=837&dpr=1.5)
 
 {% for item in site.data.settings %}
     {{content}}
