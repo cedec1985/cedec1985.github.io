@@ -8,7 +8,6 @@ permalink : /content.html/
 
 <main class="container">
 {% for item in site.data.settings %}
-    {{item}}
     <strong>{{ item.blog_name }}</strong>
     <em>{{ item.blog_description }}</em>
     <p><span> 
