@@ -21,8 +21,5 @@ permalink : /content.html/
       </p>
     </div>
 {% endfor %}
-    
-<p>Retour à l'accueil</p>
-[Click here]( "/" | relative_url )
 
 </main>
