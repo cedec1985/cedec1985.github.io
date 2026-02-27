@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Interface Excel et ses fonctionnalités"
 collection : tutorials
 permalink : /interface-excel-et-ses-fonctionnalites.html
