@@ -15,14 +15,7 @@
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
-    <header class="page-header" role="banner">
-      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-      {% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-      {% endif %}
-    
-  <div class="wrapper"><a class="site-title" rel="author" href="/">de Blogger à Jekyll</a><nav class="site-nav">
+<div class="wrapper"><a class="site-title" rel="author" href="/">de Blogger à Jekyll</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -33,7 +26,15 @@
         </label>
         <div class="trigger"><a class="page-link" href="/content.html/">contenu du blog</a><a class="page-link" href="/SECURITY.html">Security Policy</a></div>
       </nav></div>
+    
+    <header class="page-header" role="banner">
+      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+      {% if site.github.is_project_page %}
+        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
+      {% endif %}
 </header>
+    
 <main class="main-content" aria-label="Content" id="content">
       <div class="wrapper">
         <div class="home">
