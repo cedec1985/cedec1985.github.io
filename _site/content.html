@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+ <!-- Redirect to home page after 5 seconds
+  <meta name="viewport" content="5;url=/" http-equiv="refresh">
+ -->
+  <title>page d'accueil</title>
+  <link rel="stylesheet" href="/assets/main.css">
+  <style>
+
+.container {
+  display: flex;
+  flex-direction: column; /* empile image, texte, bouton */
+  justify-content: center; /* centre verticalement */
+  align-items: center; /* centre horizontalement */
+  text-align: center; /* centre le texte */
+  min-height: 100vh; /* occupe toute la hauteur de la page */
+  gap: 20px; /* espace entre les éléments */
+}
+  </style>
+</head>
+<body>
+
+  <main class="container">
+   
+{% for item in site.data.settings %}
+    <div class="logo">
+      <img src="http://www.assistantepro.com/images/p/excel-2-1590246387.jpg" alt="Logo du blog">
+    </div>
+    {{content}}
+    <strong>{{ item.blog_name }}</strong>
+    <em>{{ item.blog_description }}</em>
+    <span> 
+      <form action="/search" id="searchThis" method="get" style="display: inline; margin: 10px auto;"><input id="searchBox" name="q" onblur="if(this.value=='')this.value=this.defaultValue;" onfocus="if(this.value==this.defaultValue)this.value='';" type="text" value="Rechercher sur ce blog" vinput="" /> <input id="searchButton" type="submit" value="Chercher" /></form>
+    </span>
+    <div>
+      <p>
+        {{ item.blog_subdomain }}
+        {{ item.max_num }}
+        {{ item.max_unit }}
+      </p>
+    </div>
+{% endfor %}
+  </main>
+
+</body>
+</html>
