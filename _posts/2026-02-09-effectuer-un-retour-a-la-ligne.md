@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Effectuer un retour à la ligne"
 collection : tutorials
 permalink : /effectuer-un-retour-a-la-ligne.html
