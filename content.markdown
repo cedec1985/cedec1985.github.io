@@ -8,6 +8,7 @@ permalink : /content.html/
 
 ![Logo Excel](https://static0.makeuseofimages.com/wordpress/wp-content/uploads/2022/03/excel-logo-blue.jpg?q=50&fit=crop&w=1488&h=837&dpr=1.5)
 
+<main class="container">
 {% for item in site.data.settings %}
     {{content}}
     <strong>{{ item.blog_name }}</strong>
@@ -22,9 +23,8 @@ permalink : /content.html/
       </p>
     </div>
 {% endfor %}
-    <div>
-      <p>Retour à l'accueil</p>
-
+    
+<p>Retour à l'accueil</p>
 [Click here]({{ "/" | relative_url }})
 
-    </div>
+</main>
