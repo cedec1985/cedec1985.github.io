@@ -22,22 +22,56 @@ L’objectif est de moderniser l’architecture du site, améliorer ses performa
 - **GitHub Pages**
 - **HTML / CSS / SASS**
 
-## Prérequis
+## Import
 
-Avant de commencer, assure-toi d’avoir installé :
+`Prérequis côté Windows`
 
-Ruby version 2.7.0 ou plus
-RubyGems
-GCC and Make
+# Outils nécessaires
 
-```bash
-gem install bundler jekyll
-jekyll new myblog
-cd myblog
-bundle install => dépendances Ruby gems
-bundle exec jekyll serve => https://www.localhost:4000
-'''
-bundle update => mise à jour des dépendances
+Ruby (avec DevKit) → recommandé : Ruby 2.6 ou 2.7
+Git Bash (beaucoup plus fiable que CMD)
+
+Si Ruby n’est pas encore installé :
+https://rubyinstaller.org
+(prendre Ruby+Devkit et cocher “Add Ruby to PATH”)
+
+Vérifie :
+ruby -v
+gem -v
+
+# Installer jekyll-import
+
+Dans Git Bash ou PowerShell :
+gem install jekyll-import
+(aucun problème avec Jekyll 3.10.0)
+
+# Préparer l’export Blogger
+
+Blogger → Paramètres
+Gérer le blog
+Sauvegarder le contenu
+Tu obtiens un fichier .xml
+Copie ce fichier dans le dossier racine de ton site Jekyll
+
+Exemple :
+C:\\sites\\mon-blog-jekyll\\blogger-export.xml
+
+Se placer dans le dossier Jekyll :
+
+cd /c/sites/mon-blog-jekyll
+
+# Commande IMPORT BLOGGER (Windows)
+
+ruby -r rubygems -e "require 'jekyll-import';
+JekyllImport::Importers::Blogger.run({
+&nbsp; 'source' => 'blogger-export.xml',
+&nbsp; 'nojekyll' => false
+})"
+
+
+
+
+
 
 
 
