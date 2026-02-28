@@ -8,6 +8,7 @@ L’objectif est de moderniser l’architecture du site, améliorer ses performa
 
 - Migrer les articles et pages depuis Blogger (fichiers HTML, XML, CSV)
 - Convertir le contenu au format compatible Jekyll (Markdown)
+- Installer un thème Jekyll (par exemple : cayman)
 - Mettre en place une structure de site statique claire et maintenable
 - Déployer le site via GitHub Pages
 - Préserver le référencement (URLs, métadonnées, etc.)
