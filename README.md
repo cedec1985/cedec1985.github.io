@@ -84,6 +84,7 @@ JekyllImport::Importers::Blogger.run({
 &nbsp; 'source' => 'blogger-export.xml',
 &nbsp; 'nojekyll' => false
 })"
+```
 
 #### Dépendances additionnelles !
 
