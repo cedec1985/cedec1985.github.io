@@ -42,13 +42,15 @@ gem -v
 
 ## Installer Jekyll 
 
-gem install jekyll bundler
-bundle install : installe les dépendances
+- gem install jekyll bundler
+
+- bundle install : installe les dépendances
 
 Créer un site Jekyll de base :
-jekyll new mon-site
-cd mon-site
-bundle exec jekyll serve
+
+- jekyll new mon-site
+- cd mon-site
+- bundle exec jekyll serve
 
 Vérifie que le site fonctionne sur
 
