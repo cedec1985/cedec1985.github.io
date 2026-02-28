@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: contenu du blog
 permalink : /content.html/
 ---
