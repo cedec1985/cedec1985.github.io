@@ -12,7 +12,7 @@ L’objectif est de moderniser l’architecture du site, améliorer ses performa
 - Déployer le site via GitHub Pages
 - Préserver le référencement (URLs, métadonnées, etc.)
 
-## Technologies utilisées
+### Technologies utilisées
 
 - **Blogger** (site source)
 - **Jekyll** (générateur de site statique)
@@ -22,7 +22,7 @@ L’objectif est de moderniser l’architecture du site, améliorer ses performa
 - **GitHub Pages**
 - **HTML / CSS / SASS**
 
-### Import
+## Import
 
 `Prérequis côté Windows`
 
