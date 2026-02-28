@@ -6,7 +6,7 @@ L’objectif est de moderniser l’architecture du site, améliorer ses performa
  
 ## Objectifs
 
-- Migrer les articles et pages depuis Blogger
+- Migrer les articles et pages depuis Blogger (fichiers HTML, XML, CSV)
 - Convertir le contenu au format compatible Jekyll (Markdown)
 - Mettre en place une structure de site statique claire et maintenable
 - Déployer le site via GitHub Pages
@@ -20,7 +20,7 @@ L’objectif est de moderniser l’architecture du site, améliorer ses performa
 - **Liquid**
 - **Git & GitHub**
 - **GitHub Pages**
-- **HTML / CSS**
+- **HTML / CSS / SASS**
 
 ## Prérequis
 
@@ -34,5 +34,10 @@ GCC and Make
 gem install bundler jekyll
 jekyll new myblog
 cd myblog
-bundle exec jekyll serve
+bundle install => dépendances Ruby gems
+bundle exec jekyll serve => https://www.localhost:4000
+'''
+bundle update => mise à jour des dépendances
+
+
 
