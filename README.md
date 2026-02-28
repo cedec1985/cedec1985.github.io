@@ -1,10 +1,10 @@
-## Description du projet
+### Description du projet
 
 Ce projet consiste à migrer un site existant hébergé sur **Blogger**(https://testavecexcel.blogspot.com)
 vers un site statique basé sur **Jekyll**, puis à le déployer automatiquement via **GitHub Pages**.  
 L’objectif est de moderniser l’architecture du site, améliorer ses performances, faciliter la maintenance et bénéficier d’un hébergement gratuit et fiable 
  
-## Objectifs
+### Objectifs
 
 - Migrer les articles et pages depuis Blogger (fichiers HTML, XML, CSV)
 - Convertir le contenu au format compatible Jekyll (Markdown)
@@ -22,11 +22,11 @@ L’objectif est de moderniser l’architecture du site, améliorer ses performa
 - **GitHub Pages**
 - **HTML / CSS / SASS**
 
-## Import
+### Import
 
 `Prérequis côté Windows`
 
-# Outils nécessaires
+## Outils nécessaires
 
 Ruby (avec DevKit) → recommandé : Ruby 2.6 ou 2.7
 Git Bash (beaucoup plus fiable que CMD)
@@ -39,13 +39,13 @@ Vérifie :
 ruby -v
 gem -v
 
-# Installer jekyll-import
+## Installer jekyll-import
 
 Dans Git Bash ou PowerShell :
 gem install jekyll-import
 (aucun problème avec Jekyll 3.10.0)
 
-# Préparer l’export Blogger
+## Préparer l’export Blogger
 
 Blogger → Paramètres
 Gérer le blog
@@ -60,7 +60,7 @@ Se placer dans le dossier Jekyll :
 
 cd /c/sites/mon-blog-jekyll
 
-# Commande IMPORT BLOGGER (Windows)
+## Commande import Blogger (Windows)
 
 ruby -r rubygems -e "require 'jekyll-import';
 JekyllImport::Importers::Blogger.run({
