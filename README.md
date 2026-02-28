@@ -69,6 +69,10 @@ JekyllImport::Importers::Blogger.run({
 &nbsp; 'nojekyll' => false
 })"
 
+#### Dépendances additionnelles !
+
+ gem install rexml safe_yaml
+
 
 
 
