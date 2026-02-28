@@ -64,11 +64,11 @@ gem install jekyll-import
 
 ## Préparer l’export Blogger
 
-Blogger → Paramètres
-Gérer le blog
-Sauvegarder le contenu
-Tu obtiens un fichier .xml
-Copie ce fichier dans le dossier racine de ton site Jekyll
+- Blogger → Paramètres
+- Gérer le blog 
+- Sauvegarder le contenu
+- Tu obtiens un fichier .xml
+- Copie ce fichier dans le dossier racine de ton site Jekyll
 
 Exemple :
 C:\\sites\\mon-blog-jekyll\\blogger-export.xml
