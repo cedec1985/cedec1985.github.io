@@ -40,6 +40,20 @@ Vérifie :
 ruby -v
 gem -v
 
+## Installer Jekyll 
+
+gem install jekyll bundler
+bundle install : installe les dépendances
+
+Créer un site Jekyll de base :
+jekyll new mon-site
+cd mon-site
+bundle exec jekyll serve
+
+Vérifie que le site fonctionne sur
+
+http://localhost:4000
+
 ## Installer jekyll-import
 
 Dans Git Bash ou PowerShell :
