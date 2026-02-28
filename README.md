@@ -78,13 +78,15 @@ Se placer dans le dossier Jekyll :
 cd /c/sites/mon-blog-jekyll
 
 ## Commande import Blogger (Windows)
+
 ```bash
+
 ruby -r rubygems -e "require 'jekyll-import';
 JekyllImport::Importers::Blogger.run({
 &nbsp; 'source' => 'blogger-export.xml',
-&nbsp; 'nojekyll' => false
-})"
-```
+&nbsp;
+
+```bash
 
 #### Dépendances additionnelles !
 
