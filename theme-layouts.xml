@@ -2048,29 +2048,29 @@ head.appendChild(script);
 <macro:includable id='sections' var='col'>
   <macro:if cond='data:col.num == 0'>
   <macro:else/>
-    <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-1&quot;' preferred='yes' showaddelement='yes'/>
+    <b:section class='data:col.class' id='data:col.idPrefix + &quot;-1&quot;' preferred='yes' showaddelement='yes'/>
 
     <macro:if cond='data:col.num &gt;= 2'>
-      <table border='0' cellpadding='0' cellspacing='0' mexpr:class='&quot;section-columns columns-&quot; + data:col.num'>
+      <table border='0' cellpadding='0' cellspacing='0' class='&quot;section-columns columns-&quot; + data:col.num'>
       <tbody>
       <tr>
         <td class='first columns-cell'>
-          <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-2-1&quot;'/>
+          <b:section class='data:col.class' id='data:col.idPrefix + &quot;-2-1&quot;'/>
         </td>
 
         <td class='columns-cell'>
-          <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-2-2&quot;'/>
+          <b:section class='data:col.class' id='data:col.idPrefix + &quot;-2-2&quot;'/>
         </td>
 
         <macro:if cond='data:col.num &gt;= 3'>
           <td class='columns-cell'>
-            <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-2-3&quot;'/>
+            <b:section class='data:col.class' id='data:col.idPrefix + &quot;-2-3&quot;'/>
           </td>
         </macro:if>
 
         <macro:if cond='data:col.num &gt;= 4'>
           <td class='columns-cell'>
-            <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-2-4&quot;'/>
+            <b:section class='data:col.class' id='data:col.idPrefix + &quot;-2-4&quot;'/>
           </td>
         </macro:if>
       </tr>
@@ -2078,7 +2078,7 @@ head.appendChild(script);
       </table>
 
       <macro:if cond='data:col.includeBottom'>
-        <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-3&quot;' showaddelement='no'/>
+        <b:section class='data:col.class' id='data:col.idPrefix + &quot;-3&quot;' showaddelement='no'/>
       </macro:if>
     </macro:if>
   </macro:if>
