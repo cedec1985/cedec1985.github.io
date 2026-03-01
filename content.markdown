@@ -13,6 +13,10 @@ permalink : /content.html/
       <form action="/search" id="searchThis" method="get" style="display: inline; margin: 10px auto;"><input id="searchBox" name="q" onblur="if(this.value=='')this.value=this.defaultValue;" onfocus="if(this.value==this.defaultValue)this.value='';" type="text" value="Rechercher sur ce blog" vinput="" /> <input id="searchButton" type="submit" value="Chercher" /></form>
     </span></p>
 {% endfor %}
-
-
+    
+  <a data-flip-widget="ico"
+          href="https://flipboard.com/@CedricDeC?utm_campaign=tools&utm_medium=follow&action=follow">
+          <img src="https://cdn.flipboard.com/badges/flipboard_mrsw.png" alt="Flipboard" />
+          </a><script src="https://cdn.flipboard.com/web/buttons/js/flbuttons.min.js"
+          type="text/javascript"></script>
 </main>
