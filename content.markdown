@@ -14,4 +14,29 @@ permalink : /content.html/
     </span></p>
 {% endfor %}
 
+
+      <footer class="site-footer">
+<span>Voici une liste de sites/blogs que je consulte régulièrement
+<table class="styled-table">
+  <thead>
+    <tr>
+      {% for key in site.data.reading_list[0] %}
+        <th>{{ key[0] | capitalize }}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in site.data.reading_list %}
+      <tr>
+        {% for pair in row %}
+          <td>{{ pair[1] }}</td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</span>
+    <span class="site-footer-credits">Cette page est générée par<a href="https://pages.github.com">GitHub Pages</a>.</span>
+    </footer>
+
 </main>

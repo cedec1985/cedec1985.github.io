@@ -55,7 +55,7 @@ plugins:
 #   - vendor/ruby/
 
 lsi: false
-safe: true
+safe: false
 destination: _site
 source: .
 incremental: false
