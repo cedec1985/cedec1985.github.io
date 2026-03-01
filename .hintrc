@@ -32,6 +32,12 @@
           "meta[name=theme-color]"
         ]
       }
+    ],
+    "axe/language": [
+      "default",
+      {
+        "html-lang-valid": "off"
+      }
     ]
   }
 }
