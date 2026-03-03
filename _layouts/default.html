@@ -62,6 +62,7 @@
     <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p></div>
       </div>
     </main>
+    
     <footer class="site-footer h-card">
   <data class="u-url" href="/"></data>
 
@@ -76,9 +77,10 @@
           <p class="username">cedricdecraim</p></a></li></ul>
       </div>
     </div>
-      <footer class="site-footer">
-<span>Voici une liste de sites/blogs que je consulte régulièrement
-<table class="styled-table">
+<footer class="site-footer">
+  <div class="csv-table-wrapper">
+Voici une liste de sites/blogs que je consulte régulièrement
+ <table class="csv-table">
   <thead>
     <tr>
       {% for key in site.data.reading_list[0] %}
@@ -96,8 +98,8 @@
     {% endfor %}
   </tbody>
 </table>
-</span>
+  </div>
+</footer>
     <span class="site-footer-credits">Cette page est générée par<a href="https://pages.github.com">GitHub Pages</a>.</span>
-    </footer>
   </body>
 </html>
