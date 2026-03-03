@@ -319,7 +319,6 @@ a:hover { text-decoration: underline; }
 @media screen and (max-width: 42em) { .site-footer { font-size: 0.9rem; } }
 
 .site-footer-owner { display: block; font-weight: bold; }
-
 .site-footer-credits { color: #819198; }
 
 /******* Style spécifique pour les tableaux CSV ********/
