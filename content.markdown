@@ -6,8 +6,6 @@ permalink : /content.html/
 <style>
 /* Reset léger */
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -63,7 +61,7 @@ body {
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(10px);
   border-radius: 15px;
-  margin: 30px auto;
+  margin: 30px auto 30px 40px;
   width: 80%;
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
@@ -89,8 +87,8 @@ body {
 
 /* Titres */
 h2 {
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   color: #ffffff;
 }
 
