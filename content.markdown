@@ -21,7 +21,7 @@ body {
 .wrapper {
   max-width: 1100px;
   margin: auto;
-  padding: 20px;
+  padding: 10px;
 }
 
 /* Barre du haut */
@@ -81,14 +81,14 @@ body {
   color: #333;
   border-radius: 15px;
   padding: 40px;
-  margin-top: 40px;
+  margin-top: 20px;
   box-shadow: 0 8px 30px rgba(0,0,0,0.15);
 }
 
 /* Titres */
 h2 {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   color: #ffffff;
 }
 
