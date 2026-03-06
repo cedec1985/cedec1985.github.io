@@ -1,4 +1,5 @@
 ---
+layout : page404.html 
 title : la page d'erreur 
 permalink : page404.html 
 ---
