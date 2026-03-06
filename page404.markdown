@@ -1,0 +1,18 @@
+---
+title : la page d'erreur 
+permalink :/page404.html 
+---
+
+<body class="page-404">
+
+  <main class="container">
+    <p><strong>ERREUR 404</strong></p>
+
+<p><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqaftqgGT72Y4X6yaeTJtlKkddL1x056WKnKMFSK-0Qmj-iCUJP0Ei5SCW78QxvD8Zb9Rwwf8QzzAv_CcE4WklgxOKhNCcX6Up7WTpm2s9AXx1CI6iUlIHSHRUYYvjjqilZNdrJIb6aljuU68cjIATtzms3Z-Xu26xlRUHiYPWjdav-9cd7ghgsooTU24/w640-h426/5664.jpg" alt="5664" /></p>
+
+<p><strong>ERREUR 404</strong> “Houston, nous avons un problème.”??</p>
+<p>Oups… Cette page n'existe pas.</p>
+<p><a href="/" class="btn404">Retour à l’accueil</a></p>
+
+  </main>
+</body>
