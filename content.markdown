@@ -21,7 +21,7 @@ body {
 .wrapper {
   max-width: 1100px;
   margin: auto;
-  padding: 20px;
+  padding: 40px;
 }
 
 /* Barre du haut */
@@ -43,7 +43,7 @@ body {
 }
 
 .page-link {
-  margin-left: 30px;
+  margin-left: 20px;
   text-decoration: none;
   color: #ffffff;
   font-weight: 500;
@@ -81,7 +81,7 @@ body {
   color: #333;
   border-radius: 15px;
   padding: 40px;
-  margin-top: 20px;
+  margin-top: 40px;
   box-shadow: 0 8px 30px rgba(0,0,0,0.15);
 }
 
@@ -95,7 +95,7 @@ h2 {
 /* Articles récents */
 .post-list li {
   list-style: none;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   padding: 15px;
   border-radius: 10px;
   transition: 0.3s ease;
@@ -145,7 +145,7 @@ h2 {
   .site-nav {
     float: none;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 30px;
   }
 
   .page-header {
@@ -158,7 +158,6 @@ h2 {
 }
 </style>
 ![Logo Excel](https://static0.makeuseofimages.com/wordpress/wp-content/uploads/2022/03/excel-logo-blue.jpg?q=50&fit=crop&w=1488&h=837&dpr=1.5)
-
 <main class="container">
 {% for item in site.data.settings %}
     <em>{{ item.blog_description }}</em>
