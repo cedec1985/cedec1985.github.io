@@ -21,7 +21,7 @@ body {
 .wrapper {
   max-width: 1100px;
   margin: auto;
-  padding: 10px;
+  padding: 20px;
 }
 
 /* Barre du haut */
@@ -57,7 +57,7 @@ body {
 /* Header principal avec effet glassmorphism */
 .page-header {
   text-align: center;
-  padding: 30px 20px;
+  padding: 30px 30px;
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(10px);
   border-radius: 15px;
@@ -81,14 +81,14 @@ body {
   color: #333;
   border-radius: 15px;
   padding: 40px;
-  margin-top: 20px;
+  margin-top: 10px;
   box-shadow: 0 8px 30px rgba(0,0,0,0.15);
 }
 
 /* Titres */
 h2 {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   color: #ffffff;
 }
 
