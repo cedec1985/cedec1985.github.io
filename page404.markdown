@@ -1,6 +1,6 @@
 ---
 title : la page d'erreur 
-permalink :/page404.html 
+permalink : page404.html 
 ---
 
 <body class="page-404">
