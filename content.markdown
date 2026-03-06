@@ -43,7 +43,7 @@ body {
 }
 
 .page-link {
-  margin-left: 20px;
+  margin-left: 30px;
   text-decoration: none;
   color: #ffffff;
   font-weight: 500;
@@ -81,7 +81,7 @@ body {
   color: #333;
   border-radius: 15px;
   padding: 40px;
-  margin-top: 10px;
+  margin-top: 20px;
   box-shadow: 0 8px 30px rgba(0,0,0,0.15);
 }
 
@@ -159,9 +159,7 @@ h2 {
 </style>
 ![Logo Excel](https://static0.makeuseofimages.com/wordpress/wp-content/uploads/2022/03/excel-logo-blue.jpg?q=50&fit=crop&w=1488&h=837&dpr=1.5)
 <div class="wrapper"><a class="site-title" rel="author" href="/">de Blogger à Jekyll</a><nav class="site-nav">
-        <div class="trigger"><a class="page-link" href="/content.html/">contenu du blog</a><a class="page-link" href="/SECURITY.html">Security Policy</a></div>
-      </nav></div>
-    
+
 <main class="container">
 {% for item in site.data.settings %}
     <em>{{ item.blog_description }}</em>
