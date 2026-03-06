@@ -158,8 +158,7 @@ h2 {
 }
 </style>
 ![Logo Excel](https://static0.makeuseofimages.com/wordpress/wp-content/uploads/2022/03/excel-logo-blue.jpg?q=50&fit=crop&w=1488&h=837&dpr=1.5)
-<div class="wrapper"><a class="site-title" rel="author" href="/">de Blogger à Jekyll</a><nav class="site-nav">
-
+<div class="wrapper"><a class="site-title" rel="author" href="/">de Blogger à Jekyll</a>
 <main class="container">
 {% for item in site.data.settings %}
     <em>{{ item.blog_description }}</em>
