@@ -57,11 +57,11 @@ body {
 /* Header principal avec effet glassmorphism */
 .page-header {
   text-align: center;
-  padding: 40px 40px;
+  padding: 40px 40px 40px 40px;
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(10px);
   border-radius: 15px;
-  margin: 30px auto 30px 40px;
+  margin: 30px auto;
   width: 80%;
   box-shadow: 0 8px 30px rgba(0,0,0,0.3);
 }
