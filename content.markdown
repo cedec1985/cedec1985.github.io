@@ -57,13 +57,13 @@ body {
 /* Header principal avec effet glassmorphism */
 .page-header {
   text-align: center;
-  padding: 30px 30px;
+  padding: 40px 40px;
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(10px);
   border-radius: 15px;
   margin: 30px auto 30px 40px;
   width: 80%;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
 }
 
 .project-name {
@@ -87,8 +87,8 @@ body {
 
 /* Titres */
 h2 {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   color: #ffffff;
 }
 
@@ -96,7 +96,7 @@ h2 {
 .post-list li {
   list-style: none;
   margin-bottom: 30px;
-  padding: 15px;
+  padding: 25px;
   border-radius: 10px;
   transition: 0.3s ease;
   background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
@@ -104,7 +104,7 @@ h2 {
 
 .post-list li:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 30px rgba(0,0,0,0.15);
 }
 
 /* Bouton recherche */
