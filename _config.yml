@@ -71,17 +71,17 @@ kramdown:
 collections:
   posts_imported:
     output: true
-    permalink: /blog/:name
 
-#defaults:
- # - 
-    #scope: 
-      #path: "page404.html"
-    #values:
-      #layout: "page404"
-      #author: "CédricD"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate_v2
 
-      #comments: false
+pagination:
+  enabled: true
+  collection: posts_imported
+  per_page: 5
+  permalink: '/blog/page/:num/'
+  title: ':title - page :num'
 
 show_downloads: true
 
