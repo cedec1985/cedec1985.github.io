@@ -18,7 +18,7 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-datapage-generator", "~> 1.3"
   gem "jekyll-import", "~> 0.25.0"
-  gem "jekyll-paginate_v2", "~> 1.1"
+  gem 'jekyll-paginate', '~> 1.1'
 end
 
 gem 'liquid', '~> 4.0'
