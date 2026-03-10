@@ -6,8 +6,6 @@ permalink : /content.html/
 <style>
 /* Reset léger */
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -23,12 +21,12 @@ body {
 .wrapper {
   max-width: 1100px;
   margin: auto;
-  padding: 20px;
+  padding: 40px;
 }
 
 /* Barre du haut */
 .site-title {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 600;
   text-decoration: none;
   color: white;
@@ -59,23 +57,22 @@ body {
 /* Header principal avec effet glassmorphism */
 .page-header {
   text-align: center;
-  padding: 80px 20px;
+  padding: 40px 40px 40px 40px;
   background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(10px);
   border-radius: 15px;
-  margin: 40px auto;
-  width: 90%;
+  margin: 30px auto;
+  width: 80%;
   box-shadow: 0 8px 30px rgba(0,0,0,0.3);
 }
 
 .project-name {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
 .project-tagline {
   font-weight: 300;
-  opacity: 0.2;
 }
 
 /* Section contenu */
@@ -91,15 +88,15 @@ body {
 /* Titres */
 h2 {
   margin-top: 40px;
-  margin-bottom: 20px;
-  color: #2a5298;
+  margin-bottom: 40px;
+  color: #ffffff;
 }
 
 /* Articles récents */
 .post-list li {
   list-style: none;
-  margin-bottom: 20px;
-  padding: 15px;
+  margin-bottom: 30px;
+  padding: 25px;
   border-radius: 10px;
   transition: 0.3s ease;
   background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
@@ -107,7 +104,7 @@ h2 {
 
 .post-list li:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 30px rgba(0,0,0,0.15);
 }
 
 /* Bouton recherche */
@@ -127,7 +124,7 @@ h2 {
 
 /* Footer */
 .site-footer {
-  margin-top: 60px;
+  margin-top: 30px;
   padding: 30px;
   text-align: center;
   background: linear-gradient(135deg, #141e30, #243b55);
@@ -148,11 +145,11 @@ h2 {
   .site-nav {
     float: none;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 30px;
   }
 
   .page-header {
-    padding: 40px 15px;
+    padding: 30px 15px;
   }
 
   .project-name {
@@ -161,11 +158,6 @@ h2 {
 }
 </style>
 ![Logo Excel](https://static0.makeuseofimages.com/wordpress/wp-content/uploads/2022/03/excel-logo-blue.jpg?q=50&fit=crop&w=1488&h=837&dpr=1.5)
-
-<div class="wrapper"><a class="site-title" rel="author" href="/">de Blogger à Jekyll</a><nav class="site-nav">
-        <div class="trigger"><a class="page-link" href="/content.html/">contenu du blog</a><a class="page-link" href="/SECURITY.html">Security Policy</a></div>
-      </nav></div>
-    
 <main class="container">
 {% for item in site.data.settings %}
     <em>{{ item.blog_description }}</em>
