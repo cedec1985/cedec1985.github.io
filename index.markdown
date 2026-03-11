@@ -7,6 +7,7 @@ pagination:
     enabled: true
 ---
 <footer>
-{% include feed.md %}
+{% include _posts_imported/yes-we-blog-!.md %}
 </footer>
+
 
