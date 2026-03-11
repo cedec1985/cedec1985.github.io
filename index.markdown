@@ -6,5 +6,7 @@ layout: default
 pagination: 
     enabled: true
 ---
-
+<footer>
+{% include feed.md %}
+</footer>
 
