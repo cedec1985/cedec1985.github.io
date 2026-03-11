@@ -7,10 +7,10 @@ csv.each do |row|
   homepage_url = row['homepage_url']
   feed_url = row['feed_url']
 
-  # Create a filename based on the title
+  # Créer les fichiers markdown dans le dossier _posts_imported
   filename = "_posts_imported/#{title.downcase.gsub(' ', '-')}.md"
 
-  # Create the content of the markdown file
+  # Créer le contenu du fichier markdown
   content = <<~MARKDOWN
     ---
     title: "#{title}"
@@ -25,6 +25,6 @@ csv.each do |row|
     Feed: [#{feed_url}](#{feed_url})
   MARKDOWN
 
-  # Write the content to the markdown file
+  # Écrire le contenu dans le fichier markdown
   File.write(filename, content)
 end

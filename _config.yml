@@ -74,7 +74,7 @@ collections:
 
 plugins:
   - jekyll-feed
-  - jekyll-paginate_v2
+  - jekyll-paginate
 
 pagination:
   enabled: true
