@@ -171,8 +171,11 @@ h2 {
           <img src="https://cdn.flipboard.com/badges/flipboard_mrsw.png" alt="Flipboard" />
           </a><script src="https://cdn.flipboard.com/web/buttons/js/flbuttons.min.js"
           type="text/javascript"></script>
-{% for item in site.posts.yesweblog %}
-    <em>{{ item }}</em>
-{% endfor %}
 </div>
 </main>
+<footer>
+{% for item in site.page.yesweblog %}
+    <em>{{ page.title }}</em>
+    <em>{{ page.homepage_url }}</em>
+{% endfor %}
+</footer>
