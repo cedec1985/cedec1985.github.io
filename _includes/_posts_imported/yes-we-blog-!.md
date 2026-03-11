@@ -1,11 +1,9 @@
-
 ---
 title: "Yes We Blog !"
 homepage_url: "https://yesweblog.fr/"
 feed_url: "https://yesweblog.fr/feed/"
 ---
 
----
 『『『『『『『『『『『『
 〔 ★★ 💫 º_º mon site º_º 💫 ★★ 〕
 』』』』』』』』』』
