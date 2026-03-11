@@ -74,9 +74,12 @@
      
     </div>
   </div>
-  <!-- #include yes-we-blog-!.md --!>
   <div class="csv-table-wrapper">
-    <p>Voici une liste de sites/blogs que je consulte régulièrement :</p>
+    <p>Voici une liste de sites/blogs que je consulte régulièrement :
+    {% for feed in site.post_imported %}
+      {{feed}}
+    {% endfor %}
+    </p>
   </div>
 </footer>
     <span class="site-footer-credits">Cette page est générée par<a href="https://pages.github.com">GitHub Pages</a>.</span>
