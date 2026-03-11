@@ -6,9 +6,8 @@ layout: default
 pagination: 
     enabled: true
 ---
-<footer>
-{% include yes-we-blog-!.md %}
-</footer>
+
+
 
 
 
