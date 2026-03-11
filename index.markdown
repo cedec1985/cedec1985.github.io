@@ -7,8 +7,9 @@ pagination:
     enabled: true
 ---
 <footer>
-{% include yes-we-blog-!.markdown %}
+{% include yes-we-blog-!.md %}
 </footer>
+
 
 
 
