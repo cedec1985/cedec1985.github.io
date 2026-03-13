@@ -1,6 +1,6 @@
 ---
 title: "Yes We Blog !"
-homepage_url: "https://yesweblog.fr/"
+url: "https://yesweblog.fr/"
 feed_url: "https://yesweblog.fr/feed/"
 permalink : /yesweblog.html
 ---
