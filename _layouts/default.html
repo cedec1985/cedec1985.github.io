@@ -136,10 +136,7 @@
   </div> 
   <span class="site-footer-credits">Cette page est générée par<a href="https://pages.github.com">GitHub Pages</a>.</span>
 <p>
-{% for blog in site.posts.yesweblog %}
- <p>Voici une liste de sites/blogs que je consulte régulièrement :</p>
-  <a href="{{ blog.homepage_url }}">{{ blog.title }}</a><br>
-{% endfor %}
+  {% include_relative _posts_imported/yes-we-blog.md %}
 </p>
 </footer>
 </html>

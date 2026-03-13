@@ -6,11 +6,12 @@ permalink : /yesweblog.html/
 ---
 
 <footer>
-<span class="site-footer-credits">Cette page est générée par<a href="https://pages.github.com">GitHub Pages</a>.</span>
+ <span class="site-footer-credits">Cette page est générée par<a href="https://pages.github.com">GitHub Pages</a>.</span>
 <p>
-{% for blog in site.posts.yesweblog %}
  <p>Voici une liste de sites/blogs que je consulte régulièrement :</p>
-  <a href="{{ blog.homepage_url }}">{{ blog.title }}</a><br>
+ {% for post in site.posts where post.title == 'Yes We Blog !' %}
+  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  <p>{{ post.excerpt }}</p>
 {% endfor %}
 </p>
 </footer>
