@@ -193,7 +193,7 @@ h2 {
     <span class="previous">Précédent</span>
   {% endif %}
   <span class="page_number ">
-    Page: {{ paginator.page }} of {{ paginator.total_pages }}
+    Page {{ paginator.page }} / {{ paginator.total_pages }}
   </span>
   {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path }}" class="next">Suivant</a>
@@ -204,9 +204,9 @@ h2 {
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
+    <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Précédent</a>
   {% else %}
-    <span>&laquo; Prev</span>
+    <span>&laquo; Précédent</span>
   {% endif %}
 
   {% for page in (1..paginator.total_pages) %}
@@ -220,9 +220,9 @@ h2 {
   {% endfor %}
 
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
+    <a href="{{ paginator.next_page_path | relative_url }}">Suivant&raquo;</a>
   {% else %}
-    <span>Next &raquo;</span>
+    <span>Suivant &raquo;</span>
   {% endif %}
 </div>
 {% endif %}
