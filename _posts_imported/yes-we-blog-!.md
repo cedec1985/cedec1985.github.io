@@ -4,8 +4,10 @@ homepage_url: "https://yesweblog.fr/"
 feed_url: "https://yesweblog.fr/feed/"
 ---
 
+<footer>
+
 # Yes We Blog !
 
 Homepage: [https://yesweblog.fr/](https://yesweblog.fr/)
-
 Feed: [https://yesweblog.fr/feed/](https://yesweblog.fr/feed/)
+</footer>

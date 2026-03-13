@@ -76,12 +76,10 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
 
-pagination:
-  enabled: true
-  collection: posts_imported
-  per_page: 5
-  permalink: '/blog/page/:num/'
-  title: ':title - page :num'
-
+paginate: 2
+paginate_path: "/blog/page:num/"
 show_downloads: true
+
+
+
 

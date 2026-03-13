@@ -1,9 +1,9 @@
 ---
 layout: default
 title: "Interface Excel et ses fonctionnalités"
-collection : tutorials
 permalink : /interface-excel-et-ses-fonctionnalites.html
 date: 2026-02-01 14:41:25 +0100
+url: https://cedec1985.github.io/interface-excel-et-ses-fonctionnalites.html
 ---
 
 Tout en haut de la fenêtre, il y a ce que l'on appelle le « ruban ». C'est une des plus grosses mises à jour d'Office 2007. Un ruban, graphiquement évolué, duquel sont disponibles toutes les fonctionnalités du logiciel.
