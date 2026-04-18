@@ -9,5 +9,5 @@ permalink : /yesweblog.html/
 <p> Voici une liste de sites/blogs que je consulte régulièrement :
 <br>
 {% include index.html url="https://yesweblog.fr/"
-max-width="20px" file="/assets/logo.jpeg" alt="blog logo" %}</p>
+width="20px" file="/assets/logo.jpeg" alt="blog logo" %}</p>
 </footer>
