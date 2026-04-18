@@ -2,7 +2,7 @@
 title: "Yes We Blog !"
 url: "https://yesweblog.fr/"
 feed_url: "https://yesweblog.fr/feed/"
-permalink : /yesweblog.html
+permalink : /yesweblog.html/
 ---
 <footer>
  <span class="site-footer-credits">Cette page est générée par<a href="https://pages.github.com">GitHub Pages</a>.</span>
