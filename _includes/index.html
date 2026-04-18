@@ -2,8 +2,8 @@
 <footer>
 <br>  
    <a href="{{ include.url }}">
-   <img src="{{ include.file }}"
-      alt="{{ include.alt }}"/>
+   <img src="{{ include.file | relative_url }}"
+      alt="{{ include.alt }}" width ="{{ include.width }}" />
    </a>
 </footer>
 </html>
