@@ -1,6 +1,6 @@
 <figure>
      <a href="{{ include.url }}">
-     <img src="{{ include.file }}" style="width: {{ include.width }};"
+     <img src="{{ include.file | relative_url }}" style="width: {{ include.width }};"
         alt="{{ include.alt }}"/>
      </a>
      <figcaption>{{ include.caption }}</figcaption>
