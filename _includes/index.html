@@ -5,5 +5,9 @@
    <img src="{{ include.file | relative_url }}"
       alt="{{ include.alt }}" width ="{{ include.width }}" />
    </a>
+    <a href="{{ include.url }}">
+   <img src="{{ 'logo.jpeg' | asset_img_url }}"
+      alt="{{ include.alt }}" width ="{{ include.width }}" />
+   </a>
 </footer>
 </html>
