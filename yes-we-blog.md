@@ -5,7 +5,7 @@ feed_url: "https://yesweblog.fr/feed/"
 permalink : /yesweblog.html/
 ---
 {% include index.html
-    url="https://yesweblog.fr/
+    url="https://yesweblog.fr/"
     width="10px"
     file="/assets/logo.jpeg"
     alt="blog logo"
