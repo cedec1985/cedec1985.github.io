@@ -126,5 +126,9 @@
    <img src="/assets/logo.jpeg"
       alt="blog logo"/>
    </a>
+    <a href="{{ include.url }}">
+   <img src="{{ include.file | asset_img_url }}"
+      alt="{{ include.alt }}" width ="{{ include.width }}" />
+   </a>
  </p>
 </html>
