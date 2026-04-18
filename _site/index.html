@@ -122,13 +122,13 @@
  <span class="site-footer-credits">Cette page est générée par<a href="https://pages.github.com">GitHub Pages</a>.</span>
  <p>Voici une liste de sites/blogs que je consulte régulièrement :
 <br>  
-   <a href="https://yesweblog.fr/">
-   <img src="/assets/logo.jpeg"
-      alt="blog logo"/>
-   </a>
-    <a href="{{ include.url }}">
-   <img src="{{ include.file | asset_img_url }}"
-      alt="{{ include.alt }}" width ="{{ include.width }}" />
-   </a>
+  <p>
+   {% include yes-we-blog.md
+    url="http://yesweblog.fr/"
+    max-width="20px"
+    file="logo.jpeg"
+    alt="yesweblog logo"
+    caption="This is the yesweblog logo."
+  %}
  </p>
 </html>
