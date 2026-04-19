@@ -8,6 +8,6 @@ permalink : /yesweblog.html/
     url="https://yesweblog.fr/"
     width="10px"
     file="/assets/logo.jpeg"
-    alt="blog logo"
+    alt="yesweblog logo"
     caption="This is the yesweblog logo."
  %}
