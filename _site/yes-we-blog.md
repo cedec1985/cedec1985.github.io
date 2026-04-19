@@ -6,7 +6,7 @@ permalink : /yesweblog.html/
 ---
 {% include index.html
     url="https://yesweblog.fr/"
-    width="10px"
+    width="20px"
     file="/assets/logo.jpeg"
     alt="yesweblog logo"
     caption="This is the yesweblog logo."
