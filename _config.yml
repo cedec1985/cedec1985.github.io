@@ -57,7 +57,7 @@ plugins:
 lsi: false
 safe: false
 destination: _site
-source: .
+source: _site
 incremental: false
 highlighter: rouge
 gist:
@@ -73,7 +73,6 @@ collections:
     output: true
 
 plugins:
-  - jekyll-feed
   - jekyll-paginate
 
 paginate: 2
