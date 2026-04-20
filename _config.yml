@@ -57,7 +57,7 @@ plugins:
 lsi: false
 safe: false
 destination: _site
-source: _site
+source: .
 incremental: false
 highlighter: rouge
 gist:
@@ -76,7 +76,7 @@ plugins:
   - jekyll-paginate
 
 paginate: 2
-paginate_path: "/blog/page:num/"
+paginate_path: "/page:num/"
 show_downloads: true
 
 
