@@ -5,8 +5,8 @@ feed_url: "https://yesweblog.fr/feed/"
 permalink : /yesweblog.html/
 ---
 <footer>
-<a href="http:// yesweblog.fr/">
+<a href="http://yesweblog.fr/">
   
-[![logo yesweblog]](../assets/logo.jpeg)
+[![logo yesweblog]](assets/logo.jpeg)
 </a>
 </footer>
