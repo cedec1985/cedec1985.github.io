@@ -4,10 +4,8 @@ url: "https://yesweblog.fr/"
 feed_url: "https://yesweblog.fr/feed/"
 permalink : /yesweblog.html/
 ---
-{% include index.html
-    url="https://yesweblog.fr/"
-    width="20px"
-    file="/assets/logo.jpeg"
-    alt="yesweblog logo"
-    caption="This is the yesweblog logo."
- %}
+<footer>
+<a href="http:// yesweblog.fr/">
+  ![logo yesweblog]({{ site.baseurl }}/assets/logo.jpeg)
+</a>
+</footer>
