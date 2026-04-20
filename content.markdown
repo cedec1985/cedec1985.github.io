@@ -1,7 +1,7 @@
 ---
 title: contenu du blog
 permalink : /content.html/
-logo: ../assets/logo.jpeg
+logo: assets/logo.jpeg
 ---
 
 <style>
@@ -174,6 +174,7 @@ h2 {
           type="text/javascript"></script>
 </div>
   <p>{{page.logo}}</p>
+  {% include logo.html url="http://yesweblog.fr/" file="../assets/logo.jpeg" alt="logo yesweblog" width="40" %}
 </main>
 
 
