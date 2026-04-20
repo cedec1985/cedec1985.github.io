@@ -9,7 +9,12 @@ pagination:
 
 [![logo yesweblog]](../assets/logo.jpeg)
 
-
+{% include logo.html 
+url="http://yesweblog.fr/"
+file="../assets/logo.jpeg"
+alt="logo yesweblog"
+width="20"
+%}
 
 
 
