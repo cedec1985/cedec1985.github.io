@@ -173,7 +173,6 @@ h2 {
           </a><script src="https://cdn.flipboard.com/web/buttons/js/flbuttons.min.js"
           type="text/javascript"></script>
 </div>
-  <p>{{page.logo}}</p>
   {% include logo.html url="http://yesweblog.fr/" file="../assets/logo.jpeg" alt="logo yesweblog" width="40" %}
 </main>
 
