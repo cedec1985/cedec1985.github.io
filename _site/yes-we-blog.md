@@ -6,6 +6,7 @@ permalink : /yesweblog.html/
 ---
 <footer>
 <a href="http:// yesweblog.fr/">
-  ![logo yesweblog]({{ site.baseurl }}/assets/logo.jpeg)
+  
+[![logo yesweblog]](../assets/logo.jpeg)
 </a>
 </footer>
