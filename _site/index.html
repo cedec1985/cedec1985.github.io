@@ -123,15 +123,8 @@
  <p>Voici une liste de sites/blogs que je consulte régulièrement :
 <br>  
   <p>
-   {% include index.html
-    url="http://yesweblog.fr/"
-    max-width="20px"
-    file="assets/logo.jpeg"
-    alt="yesweblog logo"
-    caption="This is the yesweblog logo."
-  %}
+    <a href="http://yesweblog.fr/" target="_blank">
+  <img src="{{ site.baseurl }}/assets/logo.jpeg" alt="logo yesweblog"/>
+</a>
   </p>
-    <a href="http://yesweblog.fr/">
-    <img src="{{'logo.jpeg'| asset_img_url}}" width="20px" alt="yesweblog logo"/>
-    </a>
 </html>
