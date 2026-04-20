@@ -9,7 +9,7 @@ permalink : /yesweblog.html/
 <br>
 <a href="http://yesweblog.fr/">
   
-  ![logo yesweblog]({{ site.baseurl }}/assets/logo.jpeg)
+  [!][logo yesweblog]({{ site.baseurl }}/assets/logo.jpeg)
   
 </a>
 </p>
