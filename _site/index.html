@@ -123,8 +123,10 @@
  <p>Voici une liste de sites/blogs que je consulte régulièrement :
 <br>  
   <p>
-    <a href="http://yesweblog.fr/">
-  <img src="{{ 'logo.jpeg' | relative_url}} alt="logo yesweblog"/>
-</a>
+    {% include logo.html 
+    url="http://yesweblog.fr/" 
+    file="./assets/logo.jpeg" 
+    alt="logo yesweblog" 
+    width="40" %}
   </p>
 </html>
