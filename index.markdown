@@ -11,7 +11,7 @@ pagination:
 
 {% include logo.html 
 url="http://yesweblog.fr/"
-file="../assets/logo.jpeg"
+file="_site/assets/logo.jpeg"
 alt="logo yesweblog"
 width="20"
 %}
