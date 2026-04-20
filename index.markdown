@@ -7,7 +7,7 @@ pagination:
     enabled: true
 ---
 
-[![logo yesweblog]({{site.baseurl}}/assets/logo.jpeg)
+[!][logo yesweblog]({{site.baseurl}}/assets/logo.jpeg)
 
 
 
