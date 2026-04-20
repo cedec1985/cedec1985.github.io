@@ -7,6 +7,8 @@ permalink : /yesweblog.html/
 <footer>
 <p>Voici une liste de sites/blogs que je consulte régulièrement :
 <br>
-{% include index.html url="https://yesweblog.fr/"
-width="20px" file="/assets/logo.jpeg" alt="blog logo" %}</p>
+<a href="http:// yesweblog.fr/">
+  ![logo yesweblog]({{ site.baseurl }}/assets/logo.jpeg)
+</a>
+</p>
 </footer>
