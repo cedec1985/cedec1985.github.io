@@ -7,6 +7,6 @@ permalink : /yesweblog.html/
 
 {% include logo.html 
 url="http://yesweblog.fr/" 
-file="../assets/logo.jpeg" 
+file="assets/logo.jpeg" 
 alt="logo yesweblog" 
 width="40" %}
