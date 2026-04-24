@@ -50,11 +50,34 @@
       <h1 class="project-name">de Blogger à Jekyll</h1>
       <h2 class="project-tagline">Creation d'un blog Jekyll à partir d'un export de Blogger et déploiement sur GitHub Pages.</h2>
     </header>
+<!-- This loops through the paginated posts -->
 
+    
+
+<!-- Pagination links
+<div class="pagination">
+  
+    <span class="previous">Précédent</span>
+  
+  <span class="page_number ">
+    Page  / 
+  </span>
+  
+    <span class="next ">Suivant</span>
+  
+</div>
+
+-->
 <main class="main-content" aria-label="Content" id="content">
       <div class="wrapper">
         <div class="home">
-          
+          <figure>
+     <a href="http://yesweblog.fr/">
+     <img src="/assets/logo.jpeg" width="40" alt="logo yesweblog" />
+     </a>
+  </figure>
+
+
 <h2 class="post-list-heading">Articles récents</h2>
     <ul class="post-list"><li><span class="post-meta">Feb 9, 2026</span>
         <h3>
@@ -87,6 +110,7 @@
 <footer class="site-footer h-card">
   <div class="footer-col-wrapper">
     <div class="footer-col footer-col-1">
+  
         <li>Email : 
           <a class="u-email" href="mailto:ceddec550@gmail.com">
             <span class="username">ceddec550@gmail.com</span>
@@ -101,17 +125,21 @@
           <a href="https://www.linkedin.com/in/cedricdecraim">
             <span class="username">cedricdecraim</span>
           </a>
-        </li></div></div>
+        </li>
+     
+    </div>
+  </div> 
+  <span class="site-footer-credits">Cette page est générée par<a href="https://pages.github.com">GitHub Pages</a>.</span>
+<p>
+Voici une liste de sites/blogs que je consulte régulièrement :
+  <figure>
+     <a href="http://yesweblog.fr/">
+     <img src="/assets/logo.jpeg" width="40"
+        alt="logo yesweblog"/>
+     </a>
+  </figure>
+
+<br>
+</p>
 </footer>
- <span class="site-footer-credits">Cette page est générée par<a href="https://pages.github.com">GitHub Pages</a>.</span>
- <p>Voici une liste de sites/blogs que je consulte régulièrement :
-<br>  
-  <p>
-    {% include logo.html 
-    url="http://yesweblog.fr/" 
-    file="../assets/logo.jpeg" 
-    alt="logo yesweblog" 
-    width="40" 
-    %}
-  </p>
 </html>

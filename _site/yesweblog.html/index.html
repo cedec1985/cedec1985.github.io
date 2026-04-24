@@ -8,8 +8,8 @@
 <meta name="generator" content="Jekyll v3.10.0" />
 <meta property="og:title" content="Yes We Blog !" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Cette page est générée parGitHub Pages. Voici une liste de sites/blogs que je consulte régulièrement : Cette page est générée parGitHub Pages. Voici une liste de sites/blogs que je consulte régulièrement : &lt;/html&gt;" />
-<meta property="og:description" content="Cette page est générée parGitHub Pages. Voici une liste de sites/blogs que je consulte régulièrement : Cette page est générée parGitHub Pages. Voici une liste de sites/blogs que je consulte régulièrement : &lt;/html&gt;" />
+<meta name="description" content="Creation d’un blog Jekyll à partir d’un export de Blogger et déploiement sur GitHub Pages." />
+<meta property="og:description" content="Creation d’un blog Jekyll à partir d’un export de Blogger et déploiement sur GitHub Pages." />
 <link rel="canonical" href="http://localhost:4000/yesweblog.html/" />
 <meta property="og:url" content="http://localhost:4000/yesweblog.html/" />
 <meta property="og:site_name" content="de Blogger à Jekyll" />
@@ -18,7 +18,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Yes We Blog !" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-03-13T00:00:00+01:00","datePublished":"2026-03-13T00:00:00+01:00","description":"Cette page est générée parGitHub Pages. Voici une liste de sites/blogs que je consulte régulièrement : Cette page est générée parGitHub Pages. Voici une liste de sites/blogs que je consulte régulièrement : &lt;/html&gt;","headline":"Yes We Blog !","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/yesweblog.html/"},"url":"http://localhost:4000/yesweblog.html/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-03-13T00:00:00+01:00","datePublished":"2026-03-13T00:00:00+01:00","description":"Creation d’un blog Jekyll à partir d’un export de Blogger et déploiement sur GitHub Pages.","headline":"Yes We Blog !","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/yesweblog.html/"},"url":"http://localhost:4000/yesweblog.html/"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -51,10 +51,28 @@
       <h1 class="project-name">Yes We Blog !</h1>
       <h2 class="project-tagline">Creation d'un blog Jekyll à partir d'un export de Blogger et déploiement sur GitHub Pages.</h2>
     </header>
+<!-- This loops through the paginated posts -->
+
     
+
+<!-- Pagination links
+<div class="pagination">
+  
+    <span class="previous">Précédent</span>
+  
+  <span class="page_number ">
+    Page  / 
+  </span>
+  
+    <span class="next ">Suivant</span>
+  
+</div>
+
+-->
 <main class="main-content" aria-label="Content" id="content">
       <div class="wrapper">
         <div class="home">
+          
 
 <h2 class="post-list-heading">Articles récents</h2>
     <ul class="post-list"><li><span class="post-meta">Feb 9, 2026</span>
@@ -104,15 +122,20 @@
             <span class="username">cedricdecraim</span>
           </a>
         </li>
+     
     </div>
   </div> 
   <span class="site-footer-credits">Cette page est générée par<a href="https://pages.github.com">GitHub Pages</a>.</span>
 <p>
 Voici une liste de sites/blogs que je consulte régulièrement :
-{% include logo.html 
-  url="http://yesweblog.fr/" 
-  file="assets/logo.jpeg" 
-  alt="logo yesweblog" 
-  width="40" %}
- </p>
+  <figure>
+     <a href="http://yesweblog.fr/">
+     <img src="/assets/logo.jpeg" width="40"
+        alt="logo yesweblog"/>
+     </a>
+  </figure>
+
+<br>
+</p>
+</footer>
 </html>
