@@ -59,6 +59,8 @@ keep_files:
   - assets
 include:
   - assets
+  - _data
+  - _includes
 profile: true
 lsi: false
 safe: false
