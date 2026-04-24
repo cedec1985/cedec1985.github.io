@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
-<html b:version='2' class='v2' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'
-  xmlns:macro="http://www.google.com/2005/gml/macro">
+<html b:version='2' class='v2' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr' xmlns:macro='http://www.google.com/2005/gml/macro'>
   <head>
     <meta expr:content='data:blog.isMobile         ? &quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0&quot;         : &quot;width=1100&quot;' name='viewport'/>
     <b:include data='blog' name='all-head-content'/>
     <title><data:blog.pageTitle/></title>
-    
+
     <b:skin><![CDATA[/*
 -----------------------------------------------
 Blogger Template Style
@@ -70,7 +69,7 @@ URL:      www.blogger.com
      <Variable name="post.title.font" description="Title Font" type="font"
          default="normal normal 30px Georgia, Utopia, 'Palatino Linotype', Palatino, serif" value="normal normal 30px Georgia, Utopia, &#39;Palatino Linotype&#39;, Palatino, serif"/>
      <Variable name="post.background.color" description="Background Color" type="color" default="transparent" value="rgba(128,128,128,0)"/>
-     <Variable name="post.border.color" description="Border Color" type="color" default="#ccbb99"  value="#d50f00"/>
+     <Variable name="post.border.color" description="Border Color" type="color" default="#ccbb99"  value="#3300cc"/>
    </Group>
 
    <Group description="Post Footer" selector=".post-footer">
@@ -748,13 +747,13 @@ head.appendChild(script);
       <b:section class='header' id='header' maxwidgets='1' name='Header' showaddelement='no'>
         <b:widget id='Header1' locked='true' title='testExcel (en-tête)' type='Header'>
           <b:widget-settings>
-            <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEhSk9JrMmC0AD6wU6XqJxbTnns01wZrNNiBbP_xDeAowa8Tqikc8T5oO1FFFvowbzwXoxPU2M-q28V-EurkSAHqbQLHM_GHBsLM73Bya9gRktrwVObkbtEy6c9l54bDuRa5_8IFsmOTjR3VkguZITPBbgvz123DqJVT1fOMeeXYv59_zILoADRrBI8eXVk=s648</b:widget-setting>
-            <b:widget-setting name='displayHeight'>288</b:widget-setting>
+            <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEjcW9t3rAjZNQiUmkmQNP5rqljaqFpehTTGI2tCtXTa8_O_LXsVNmI4DYeSZQlUYW4hEa5TWjZdE6_U8fVTauISE8Aq5uh5jrGfmEcbiePz4sD7T32g7jopLAMy5x0P8HsVYJJ2QAA9dl3WYDmxJobdZmqko50AeYwJKZQy7VTKV7pPGricREYUcieHR_U=s752</b:widget-setting>
+            <b:widget-setting name='displayHeight'>423</b:widget-setting>
             <b:widget-setting name='sectionWidth'>752</b:widget-setting>
             <b:widget-setting name='useImage'>true</b:widget-setting>
-            <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+            <b:widget-setting name='shrinkToFit'>true</b:widget-setting>
             <b:widget-setting name='imagePlacement'>BEFORE_DESCRIPTION</b:widget-setting>
-            <b:widget-setting name='displayWidth'>648</b:widget-setting>
+            <b:widget-setting name='displayWidth'>752</b:widget-setting>
           </b:widget-settings>
           <b:includable id='main'>
 
@@ -955,20 +954,23 @@ head.appendChild(script);
                 <b:widget-setting name='authorLabel'>By</b:widget-setting>
                 <b:widget-setting name='showCommentLink'>true</b:widget-setting>
                 <b:widget-setting name='style.urlcolor'>#ffffff</b:widget-setting>
+                <b:widget-setting name='postLocationLabel'>Location:</b:widget-setting>
                 <b:widget-setting name='showAuthor'>false</b:widget-setting>
                 <b:widget-setting name='style.linkcolor'>#ffffff</b:widget-setting>
                 <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
                 <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+                <b:widget-setting name='timestampLabel'>Le</b:widget-setting>
                 <b:widget-setting name='reactionsLabel'/>
                 <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
                 <b:widget-setting name='style.layout'>1x1</b:widget-setting>
                 <b:widget-setting name='showLabels'>true</b:widget-setting>
-                <b:widget-setting name='showLocation'>true</b:widget-setting>
+                <b:widget-setting name='showLocation'>false</b:widget-setting>
+                <b:widget-setting name='postLabelsLabel'>Labels:</b:widget-setting>
                 <b:widget-setting name='showTimestamp'>true</b:widget-setting>
-                <b:widget-setting name='postsPerAd'>3</b:widget-setting>
+                <b:widget-setting name='postsPerAd'>1</b:widget-setting>
                 <b:widget-setting name='showBacklinks'>false</b:widget-setting>
                 <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
-                <b:widget-setting name='showInlineAds'>true</b:widget-setting>
+                <b:widget-setting name='showInlineAds'>false</b:widget-setting>
                 <b:widget-setting name='showReactions'>false</b:widget-setting>
               </b:widget-settings>
               <b:includable id='main' var='top'>
@@ -2048,29 +2050,29 @@ head.appendChild(script);
 <macro:includable id='sections' var='col'>
   <macro:if cond='data:col.num == 0'>
   <macro:else/>
-    <b:section class='data:col.class' id='data:col.idPrefix + &quot;-1&quot;' preferred='yes' showaddelement='yes'/>
+    <b:section expr:class='data:col.class' expr:id='data:col.idPrefix + &quot;-1&quot;' preferred='yes' showaddelement='yes'/>
 
     <macro:if cond='data:col.num &gt;= 2'>
-      <table border='0' cellpadding='0' cellspacing='0' class='&quot;section-columns columns-&quot; + data:col.num'>
+      <table border='0' cellpadding='0' cellspacing='0' expr:class='&quot;section-columns columns-&quot; + data:col.num'>
       <tbody>
       <tr>
         <td class='first columns-cell'>
-          <b:section class='data:col.class' id='data:col.idPrefix + &quot;-2-1&quot;'/>
+          <b:section expr:class='data:col.class' expr:id='data:col.idPrefix + &quot;-2-1&quot;'/>
         </td>
 
         <td class='columns-cell'>
-          <b:section class='data:col.class' id='data:col.idPrefix + &quot;-2-2&quot;'/>
+          <b:section expr:class='data:col.class' expr:id='data:col.idPrefix + &quot;-2-2&quot;'/>
         </td>
 
         <macro:if cond='data:col.num &gt;= 3'>
           <td class='columns-cell'>
-            <b:section class='data:col.class' id='data:col.idPrefix + &quot;-2-3&quot;'/>
+            <b:section expr:class='data:col.class' expr:id='data:col.idPrefix + &quot;-2-3&quot;'/>
           </td>
         </macro:if>
 
         <macro:if cond='data:col.num &gt;= 4'>
           <td class='columns-cell'>
-            <b:section class='data:col.class' id='data:col.idPrefix + &quot;-2-4&quot;'/>
+            <b:section expr:class='data:col.class' expr:id='data:col.idPrefix + &quot;-2-4&quot;'/>
           </td>
         </macro:if>
       </tr>
@@ -2078,7 +2080,7 @@ head.appendChild(script);
       </table>
 
       <macro:if cond='data:col.includeBottom'>
-        <b:section class='data:col.class' id='data:col.idPrefix + &quot;-3&quot;' showaddelement='no'/>
+        <b:section expr:class='data:col.class' expr:id='data:col.idPrefix + &quot;-3&quot;' showaddelement='no'/>
       </macro:if>
     </macro:if>
   </macro:if>
