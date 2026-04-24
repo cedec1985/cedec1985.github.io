@@ -53,7 +53,11 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
+keep_files:
+  - assets
+include:
+  - assets
+profile: true
 lsi: false
 safe: false
 destination: _site
@@ -73,11 +77,10 @@ collections:
     output: true
 
 plugins:
-  - jekyll-feed
   - jekyll-paginate
 
 paginate: 2
-paginate_path: "/blog/page:num/"
+paginate_path: "/page:num/"
 show_downloads: true
 
 

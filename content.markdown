@@ -1,6 +1,7 @@
 ---
 title: contenu du blog
 permalink : /content.html/
+logo: assets/logo.jpeg
 ---
 
 <style>
@@ -172,6 +173,7 @@ h2 {
           </a><script src="https://cdn.flipboard.com/web/buttons/js/flbuttons.min.js"
           type="text/javascript"></script>
 </div>
+  {% include logo.html url="http://yesweblog.fr/" file="../assets/logo.jpeg" alt="logo yesweblog" width="40" %}
 </main>
 
 

@@ -50,22 +50,6 @@
       <h1 class="project-name">contenu du blog</h1>
       <h2 class="project-tagline">Creation d'un blog Jekyll à partir d'un export de Blogger et déploiement sur GitHub Pages.</h2>
     </header>
-<!-- This loops through the paginated posts -->
-
-
-<!-- Pagination links -->
-<div class="pagination">
-  
-    <span class="previous">Précédent</span>
-  
-  <span class="page_number ">
-    Page  / 
-  </span>
-  
-    <span class="next ">Suivant</span>
-  
-</div>
-
     
 <main class="main-content" aria-label="Content" id="content">
       <div class="wrapper">
@@ -291,22 +275,15 @@ h2 {
         </li>
      
     </div>
-  </div> 
-  <span class="site-footer-credits">Cette page est générée par<a href="https://pages.github.com">GitHub Pages</a>.</span>
-<p>
-Voici une liste de sites/blogs que je consulte régulièrement :
-<br>
-
-<footer>
+  </div> </footer>
  <span class="site-footer-credits">Cette page est générée par<a href="https://pages.github.com">GitHub Pages</a>.</span>
  <p>Voici une liste de sites/blogs que je consulte régulièrement :
 <br>  
-   <a href="https://yesweblog.fr/">
-   <img src="logo.jpeg"
-      alt="blog logo"/>
-   </a>
+  {% include logo.html 
+   url="http://yesweblog.fr/" 
+   file="../assets/logo.jpeg" 
+   alt="logo yesweblog" 
+   width="40" 
+   %}
  </p>
-</footer>
-</html></p>
-</footer>
 </html>

@@ -81,7 +81,7 @@ cd /c/sites/mon-blog-jekyll
 ```
     ruby -r rubygems -e "require 'jekyll-import';
     JekyllImport::Importers::Blogger.run({
-    'source' => 'blogger-export.xml',
+    'source' => 'blogger-export.xml'})"
 
 ```
 #### Dépendances additionnelles !
