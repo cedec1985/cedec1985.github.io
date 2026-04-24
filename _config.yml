@@ -53,6 +53,8 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# keep_files section allows the selected files to be compiled while the build task is running
 keep_files:
   - assets
 include:
