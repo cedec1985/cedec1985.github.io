@@ -57,10 +57,9 @@ plugins:
 # keep_files section allows the selected files to be compiled while the build task is running
 keep_files:
   - assets
+  - _data
 include:
   - assets
-  - _data
-  - _includes
 profile: true
 lsi: false
 safe: false
