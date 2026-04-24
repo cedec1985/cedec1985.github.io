@@ -58,6 +58,7 @@ plugins:
 keep_files:
   - assets
   - _data
+  -_includes
 include:
   - assets
 profile: true
