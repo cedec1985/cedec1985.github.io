@@ -1,12 +1,8 @@
----
-layout: default
-pagination: 
-    enabled: true
----
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
+
 <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>de Blogger à Jekyll | Creation d’un blog Jekyll à partir d’un export de Blogger et déploiement sur GitHub Pages.</title>
 <meta name="generator" content="Jekyll v3.10.0" />
@@ -54,6 +50,7 @@ pagination:
       <h1 class="project-name">de Blogger à Jekyll</h1>
       <h2 class="project-tagline">Creation d'un blog Jekyll à partir d'un export de Blogger et déploiement sur GitHub Pages.</h2>
     </header>
+
 <main class="main-content" aria-label="Content" id="content">
       <div class="wrapper">
         <div class="home">
@@ -62,6 +59,7 @@ pagination:
      <img src="/assets/logo.jpeg" width="40" alt="logo yesweblog" />
      </a>
   </figure>
+
 
 <h2 class="post-list-heading">Articles récents</h2>
     <ul class="post-list"><li><span class="post-meta">Feb 9, 2026</span>
@@ -85,7 +83,7 @@ pagination:
             Un blog que je consulte régulièrement
           </a>
         </h3></li>
-        <li><span class="post-meta">Apr 26, 2026</span>
+         <li><span class="post-meta">Apr 26, 2026</span>
         <h3>
           <a class="post-link" href="/impression-de-document.html">
             Imprimer une feuille Excel
@@ -93,33 +91,12 @@ pagination:
         </h3></li>
       <li><span class="post-meta">Apr 26, 2026</span>
         <h3>
-          <a class="post-link" href="/macro-appliquer-une-mise-en-forme-conditionnelle.html">
+          <a class="post-link" href= "/macro-appliquer-une-mise-en-forme-conditionnelle.html">
             Appliquer une macro de mise en forme conditionnelle 
           </a>
         </h3></li>
-        
-<!-- This loops through the paginated posts -->
-    {% for post in paginator.posts %}
-  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-  <p class="author">
-    <span class="date">{{ post.date }}</span>
-  </p>
-  <p>{{ post.excerpt }}</p>
-{% endfor %}
-  <!-- the paginated posts -->
-       {% if page.previous or page.next %}
-  <nav class="pagination">
-    {% if page.previous %}
-      <a href="{{ page.previous.url | relative_url }}">Previous</a>
-    {% endif %}
-    <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    {% if page.next %}
-      <a href="{{ page.next.url | relative_url }}">Next</a>
-    {% endif %}
-  </nav>
-{% endif %}
 <hr>
-    
+  </nav>
     <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
   </div>
       </div>
