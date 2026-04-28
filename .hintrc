@@ -24,7 +24,9 @@
       "default",
       {
         "ignore": [
-          "meta[name=theme-color]"
+          "meta[name=theme-color]",
+          "tool-tip[popover]",
+          "button[autocapitalize]"
         ]
       }
     ],
@@ -34,6 +36,8 @@
         "html-lang-valid": "off"
       }
     ],
-    "meta-charset-utf-8": "off"
+    "meta-charset-utf-8": "off",
+    "apple-touch-icons": "off",
+    "disown-opener": "off"
   }
 }
