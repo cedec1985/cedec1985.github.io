@@ -33,6 +33,7 @@
       {
         "html-lang-valid": "off"
       }
-    ]
+    ],
+    "meta-charset-utf-8": "off"
   }
 }

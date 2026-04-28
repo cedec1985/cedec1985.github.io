@@ -16,14 +16,16 @@ gem "github-pages", "~> 232", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
-  gem "jekyll-datapage-generator", "~> 1.3"
   gem "jekyll-import", "~> 0.25.0"
-  gem 'jekyll-paginate', '~> 1.1'
+  gem "jekyll-paginate", "~> 1.1"
+  gem "jekyll-paginate-v2", "~> 1.0"
+  gem "jekyll-sitemap", "~> 1.4"
+  gem "jekyll-redirect-from", "~> 0.16"
 end
 
-gem 'liquid', '~> 4.0'
-gem 'csv', '~> 3.0'
-gem 'fileutils', '~> 1.4'
+gem "liquid", "~> 4.0"
+gem "csv", "~> 3.0"
+gem "fileutils", "~> 1.4"
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
