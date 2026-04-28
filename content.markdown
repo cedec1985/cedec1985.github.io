@@ -2,6 +2,8 @@
 title: contenu du blog
 permalink : /content.html/
 logo: assets/logo.jpeg
+pagination :
+  enabled: true
 ---
 
 <style>

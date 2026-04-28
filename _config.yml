@@ -88,7 +88,6 @@ plugins:
 pagination:
   enabled: true
   permalink: '/page:num/'
-  category: blog
   title: ':title - page :num'
   show_downloads: true
   debug: true
