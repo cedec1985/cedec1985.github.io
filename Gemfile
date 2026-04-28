@@ -17,7 +17,6 @@ gem "github-pages", "~> 232", group: :jekyll_plugins
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-import", "~> 0.25.0"
-  gem "jekyll-paginate", "~> 1.1"
   gem "jekyll-paginate-v2", "~> 1.0"
   gem "jekyll-sitemap", "~> 1.4"
   gem "jekyll-redirect-from", "~> 0.16"
