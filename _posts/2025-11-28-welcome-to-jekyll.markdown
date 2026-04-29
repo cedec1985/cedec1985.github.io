@@ -2,6 +2,7 @@
 layout: default
 title:  "Bienvenue sur Jekyll!"
 date:   2025-11-28 11:09:25 +0100
+permalink: /welcome-to-jekyll.html 
 variable : liquid 
 url : https://cedec1985.github.io/welcome-to-jekyll.html
 ---
