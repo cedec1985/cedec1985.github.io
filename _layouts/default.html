@@ -67,6 +67,7 @@ pagination:
             Appliquer une macro de mise en forme conditionnelle 
           </a>
         </h3></li>
+      
         <div><p>
         {% for post in paginator.posts %}
           <li><span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -77,22 +78,21 @@ pagination:
             </h3>
           </li>
         {% endfor %}
-        </p></div>
-        
-        <div class="pagination"><p>
+        </p>
+        <p>
           {% if paginator.previous_page %}
             <a class="pagination-link pagination-previous" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Previous</a>
           {% endif %}
-        </p></div>
-
-         <div><p>
+        </p>
+        <p>
         <span class="pagination-page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-        </p></div>
-          <div><p>
+        </p>
+        <p>
           {% if paginator.next_page %}
             <a class="pagination-link pagination-next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
           {% endif %}
-        </p></div>
+        </p>
+        </div>
 <hr>
   </nav>
     <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
