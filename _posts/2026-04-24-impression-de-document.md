@@ -2,7 +2,6 @@
 layout: default
 title:  "Impression d'un document"
 date:   2026-04-24 10:35:11 +0100
-permalink : /impression-de-document.html
 url : https://cedec1985.github.io/impression-de-document.html
 ---
 
