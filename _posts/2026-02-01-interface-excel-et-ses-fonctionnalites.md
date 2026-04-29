@@ -1,7 +1,6 @@
 ---
 layout: default
 title: "Interface Excel et ses fonctionnalités"
-permalink : /interface-excel-et-ses-fonctionnalites.html
 date: 2026-02-01 14:41:25 +0100
 url: https://cedec1985.github.io/interface-excel-et-ses-fonctionnalites.html
 ---
