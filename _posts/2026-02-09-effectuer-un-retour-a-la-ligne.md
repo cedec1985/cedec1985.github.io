@@ -4,7 +4,6 @@ title: "Effectuer un retour à la ligne"
 permalink : /effectuer-un-retour-a-la-ligne.html
 date: 2026-02-09 11:09:25 +0100
 url: https://cedec1985.github.io/effectuer-un-retour-a-la-ligne.html
-categories: blog
 ---
 
 ![Exemples de figures 2.6 à 2.8](https://blogger.googleusercontent.com/img/a/AVvXsEg6agwExkmi_QS3jq2oI2yszc8YvytRmjBxO0UFqY9yXA_2EfGiunylrGvjdcvtir7X5JiTK4kSGJJOWmqxs4M89TIl47R9t2fABULpkeHxhGiUhs827xWLG3MKyNiH2d4WP0-rdXNQy9KA4xhSXOnEyh7ZaPTkRJ901iFx9dMLaNO1QKqXM4_nVVMZTFo=w538-h685)
