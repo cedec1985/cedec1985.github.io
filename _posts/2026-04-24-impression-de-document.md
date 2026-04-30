@@ -4,7 +4,6 @@ title:  "Impression d'un document"
 date:   2026-04-24 10:35:11 +0100
 permalink : /impression-de-document.html
 url : https://cedec1985.github.io/impression-de-document.html
-categories : blog
 ---
 
 <table align="center" cellpadding="0" cellspacing="0"><tbody><tr></tr></tbody></table><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto;"><tbody><tr><td style="text-align: center;"><img border="0" src="https://blogger.googleusercontent.com/img/a/AVvXsEiw_wtO0f9EaaGMyZcEXSaU73EnH2YmXis38sNftjajSvjG-L5GGsJtLQ0oKuqW_SIqzLfhnnQI67u9XdRAsYxV6YLHm0dqJKQ88QFb20F1cP7kx6q-g9K8eQLKzPr6pYO8-tvrwx9zUPA-6SlIYF0T9BePDxRQek_RP6w14FK401b2cmNISsFsmBeetps" style="margin-left: auto; margin-right: auto;" width="400" /></td></tr><tr><td class="tr-caption" style="text-align: center;"><i style="text-align: start;"><span>Le panneau Imprimer</span></i></td></tr></tbody></table><span></span><br /><div>

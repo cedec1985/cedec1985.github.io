@@ -1,3 +1,9 @@
+---
+layout: default
+pagination: 
+    enabled: true
+---
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -108,20 +114,20 @@
             Appliquer une macro de mise en forme conditionnelle 
           </a>
         </h3></li>
-        <div><p>
-        
-        </p></div>
-        
-        <div class="pagination"><p>
-          
-        </p></div>
-
-         <div><p>
-        <span class="pagination-page-number">Page  of </span>
-        </p></div>
           <div><p>
-          
-        </p></div>
+        <!-- not sure about the reverse, the plugin offers this option, too! --> 
+            {% assign sites = paginator.posts | reverse %}
+            {% for file in sites %}
+            {{ file }}
+            {% endfor %}
+            <a href="{{ paginator.previous_page_path }}">Previous page</a> | <a
+                href="{{ paginator.next_page_path }}">Next page</a>
+            {{ paginator.page }}
+            {{ paginator.total_pages | inspect }}
+            {% for page in paginator.total_pages %}
+            {{ page }}
+            {% endfor %}
+          </p></div>
 <hr>
   </nav>
     <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>

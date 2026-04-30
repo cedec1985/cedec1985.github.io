@@ -14,30 +14,6 @@ alt="logo yesweblog"
 width="40"
 %}
 
-<div>
-      {% for post in paginator.posts %}
-          <li><span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-            <h3>
-              <a class="post-link" href="{{ post.url | relative_url }}">
-                {{ post.title }}
-              </a>
-            </h3>
-          </li>
-        {% endfor %}
-</div>
-<div>
-        {% if paginator.previous_page %}
-            <a class="pagination-link pagination-previous" href="{{ paginator.previous_page_path | prepend: site.baseurl}}">&laquo; Previous</a>
-          {% endif %}
-
-<p>        <span class="pagination-page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-</p>
-<div>
-          {% if paginator.next_page %}
-            <a class="pagination-link pagination-next" href="{{ paginator.next_page_path | prepend: site.baseurl}}">Next &raquo;</a>
-          {% endif %}
-</div>
-</div>
 
 
 
