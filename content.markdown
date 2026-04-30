@@ -182,8 +182,8 @@ h2 {
             {% for file in sites %}
             {{ file }}
             {% endfor %}
-            <a href="{{ paginator.previous_page_path }}">Previous page</a> | <a
-                href="{{ paginator.next_page_path }}">Next page</a>
+            <a href="{{ paginator.previous_page_path }}">Précédent</a> | <a
+                href="{{ paginator.next_page_path }}">Suivant</a>
             {{ paginator.page }}
             {{ paginator.total_pages | inspect }}
             {% for page in paginator.total_pages %}
