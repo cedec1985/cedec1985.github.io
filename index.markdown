@@ -14,26 +14,24 @@ alt="logo yesweblog"
 width="40"
 %}
 
-{% for post in paginator.posts %}
-       <span class="post-meta">
-              {{ post.date | date: "%b %-d, %Y" }}</span>
-            <h3>
-              <a class="post-link" href="{{ post.url | relative_url }}">
-                {{ post.title }}
-              </a>
-            </h3>
-{% endfor %}
+<main>
+ <div><p>
+        <!-- not sure about the reverse, the plugin offers this option, too! --> 
+            {% assign sites = paginator.posts | reverse %}
+            {% for file in sites %}
+            {{ file }}
+            {% endfor %}
+            <a href="{{ paginator.previous_page_path }}">Previous page</a> | <a
+                href="{{ paginator.next_page_path }}">Next page</a>
+            {{ paginator.page }}
+            {{ paginator.total_pages | inspect }}
+            {% for page in paginator.total_pages %}
+            {{ page }}
+            {% endfor %}
+          </p></div>
+<hr>
+</main>
 
-{% if paginator.previous_page %}
-        <a class="pagination-link pagination-previous" href="{{ paginator.previous_page_path | prepend: site.baseurl}}">&laquo; Previous</a>
-{% endif %}
-
-<span class="pagination-page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}
-</span>
-
-{% if paginator.next_page %}
-        <a class="pagination-link pagination-next" href="{{ paginator.next_page_path | prepend: site.baseurl}}">Next &raquo;</a>
-{% endif %}
 
 
 
