@@ -2,7 +2,7 @@
 layout: default
 title:  "Une macro pour appliquer une règle de mise en forme conditionnelle"
 date:   2026-04-24 11:09:25 +0100
-permalink: /macro-appliquer-mise-en-forme-conditionnelle.html
+permalink: /macro-appliquer-une-mise-en-forme-conditionnelle.html
 url : https://cedec1985.github.io/macro-appliquer-une-mise-en-forme-conditionnelle.html
 ---
 
