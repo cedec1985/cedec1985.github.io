@@ -9,10 +9,6 @@ pagination :
 <main>
  <div><p>
         <!-- not sure about the reverse, the plugin offers this option, too! --> 
-            {% assign sites = paginator.posts | reverse %}
-            {% for file in sites %}
-            {{ file }}
-            {% endfor %}
             <a href="{{ paginator.previous_page_path }}">Précédent</a> | <a
                 href="{{ paginator.next_page_path }}">Suivant</a>
             {{ paginator.page }}
