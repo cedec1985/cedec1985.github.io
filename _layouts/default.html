@@ -70,13 +70,17 @@ pagination:
         </h3></li>
         <div><p>
         <!-- not sure about the reverse, the plugin offers this option, too! --> 
-            <a href="{{ paginator.previous_page_path }}">Previous page</a> | <a
-                href="{{ paginator.next_page_path }}">Next page</a>
-            {{ paginator.page }}
-            {{ paginator.total_pages | inspect }}
-            {% for page in paginator.total_pages %}
-            {{ page }}
-            {% endfor %}
+            {% if paginator.previous %}
+            <a href="{{ paginator.previous_path }}">Précédent</a> 
+            {{ page }}  
+            {% endif %}
+            {% if paginator.next %}
+             <a href="{{ paginator.next_path }}">Suivant</a>
+            {{ page }} 
+            {% endif %}
+            {% if paginator.total_pages > 1 %}
+          Page  {{ paginator.page }} sur {{ paginator.total_pages }}
+            {% endif %}
           </p></div>
 <hr>
   </nav>
