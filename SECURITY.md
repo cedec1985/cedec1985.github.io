@@ -20,9 +20,3 @@ Tell them where to go, how often they can expect to get an update on a
 reported vulnerability, what to expect if the vulnerability is accepted or
 declined, etc.
 
- <div class="pagination"><p>
-            <a href="{{ paginator.previous_page_path }}">Précédent
-{{ page }} </a>| <a
-                href="{{ paginator.next_page_path }}">Suivant {{ page }}
-            </a>
-          </p></div>
