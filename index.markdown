@@ -16,8 +16,8 @@ width="40"
 
  <div class="pagination"><p>
             <a href="{{ paginator.previous_page_path }}">Précédent
-{{ page }} </a>| <a
-                href="{{ paginator.next_page_path }}">Suivant {{ page }}
+{{ paginator.previous_page }} </a>| <a
+                href="{{ paginator.next_page_path }}">Suivant {{paginator.next_page }}
             </a>
           </p></div>
 <hr>
