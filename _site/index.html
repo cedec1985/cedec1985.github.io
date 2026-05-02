@@ -105,8 +105,10 @@
         </h3></li>
         <div><p>
         <!-- pagination settings --> 
-            
-          Page  1 sur 2
+                 
+{% if paginator.total_pages > 1 %}
+Page  {{ paginator.page }} sur {{ paginator.total_pages }}
+{% endif %}
             
           </p></div>
 <hr>
