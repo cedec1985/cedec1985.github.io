@@ -19,10 +19,7 @@ width="40"
 {{ paginator.page }} </a>| <a
                 href="{{ paginator.next_page_path }}">Suivant {{paginator.page }}
             </a>
-          </p></div>
-<hr>
-<div><p>
-    
+     
 {% if paginator.total_pages > 1 %}
 Page  {{ paginator.page }} sur {{ paginator.total_pages }}
 {% endif %}
