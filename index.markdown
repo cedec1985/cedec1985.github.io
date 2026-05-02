@@ -15,9 +15,9 @@ width="40"
 %}
 
  <div class="pagination"><p>
-        <!-- not sure about the reverse, the plugin offers this option, too! --> 
-            <a href="{{ paginator.previous_page_path }}">Précédent</a> | <a
-                href="{{ paginator.next_page_path }}">Suivant</a>
+            <a href="{{ paginator.previous_page_path }}">Précédent</a>{{paginator.previous_page}} | <a
+                href="{{ paginator.next_page_path }}">Suivant {{paginator.next_page}}
+            </a>
           </p></div>
 <hr>
 
