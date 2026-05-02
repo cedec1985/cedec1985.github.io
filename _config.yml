@@ -73,6 +73,7 @@ kramdown:
 pagination:
   enabled: true
   title: ':title - page :num'
+  permalink: /page/:num/
   show_downloads: true
   debug: true
   per_page: 4
