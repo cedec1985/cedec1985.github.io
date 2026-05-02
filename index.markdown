@@ -14,19 +14,13 @@ alt="logo yesweblog"
 width="40"
 %}
 
-<main>
- <div><p>
+ <div class="pagination"><p>
         <!-- not sure about the reverse, the plugin offers this option, too! --> 
             <a href="{{ paginator.previous_page_path }}">Précédent</a> | <a
                 href="{{ paginator.next_page_path }}">Suivant</a>
-            {{ paginator.page }}
-            {{ paginator.total_pages | inspect }}
-            {% for page in paginator.total_pages %}
-            {{ page }}
-            {% endfor %}
           </p></div>
 <hr>
-</main>
+
 
 
 
