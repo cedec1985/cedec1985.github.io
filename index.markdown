@@ -15,13 +15,17 @@ width="40"
 %}
 
  <div class="pagination"><p>
-        <!-- not sure about the reverse, the plugin offers this option, too! --> 
-            <a href="{{ paginator.previous_page_path }}">Précédent</a> | <a
-                href="{{ paginator.next_page_path }}">Suivant</a>
-          </p></div>
+            <a href="{{ paginator.previous_page_path }}">Précédent
+{{ paginator.page }} </a>| <a
+                href="{{ paginator.next_page_path }}">Suivant {{paginator.page }}
+            </a>
+     
+{% if paginator.total_pages > 1 %}
+Page  {{ paginator.page }} sur {{ paginator.total_pages }}
+{% endif %}
+
+</p></div>
 <hr>
-
-
 
 
 

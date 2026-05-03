@@ -69,13 +69,6 @@
                 href="/page/2/">Suivant</a>
           </p></div>
 <hr>
-
-
-
-
-
-
-
 <h2 class="post-list-heading">Articles récents</h2>
     <ul class="post-list"><li><span class="post-meta">Feb 9, 2026</span>
         <h3>
@@ -112,8 +105,10 @@
         </h3></li>
         <div><p>
         <!-- pagination settings --> 
-            
-          Page  1 sur 2
+                 
+{% if paginator.total_pages > 1 %}
+Page  {{ paginator.page }} sur {{ paginator.total_pages }}
+{% endif %}
             
           </p></div>
 <hr>
