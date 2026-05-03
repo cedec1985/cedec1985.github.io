@@ -16,15 +16,15 @@ width="40"
 
  <div class="pagination"><p>
             <a href="{{ paginator.previous_page_path }}">Précédent
-{{ paginator.page }} </a>| <a
-                href="{{ paginator.next_page_path }}">Suivant {{paginator.page }}
+</a>| <a
+                href="{{ paginator.next_page_path }}">Suivant
             </a>
-     
+</p></div> 
+<p style="color: blue; font-size: 11px; font-weight: bold;">  
 {% if paginator.total_pages > 1 %}
 Page  {{ paginator.page }} sur {{ paginator.total_pages }}
 {% endif %}
-
-</p></div>
+</p>
 <hr>
 
 
