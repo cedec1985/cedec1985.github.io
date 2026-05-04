@@ -60,7 +60,7 @@ profile: true
 lsi: false
 safe: false
 destination: _site
-source: .
+source: ../
 incremental: false
 highlighter: rouge
 gist:
@@ -69,10 +69,12 @@ kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 
-#Pagination Settings
+#Pagination settings
 pagination:
   enabled: true
   title: ':title'
+  title_suffix: ' - Page :num' # Suffixe ajouté au titre de la page
+  limit: 0       
   permalink: '/page/:num/'
   show_downloads: true
   debug: true
@@ -83,6 +85,12 @@ pagination:
   trail:
     before: 2
     after: 2
+  above:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
 
 
 

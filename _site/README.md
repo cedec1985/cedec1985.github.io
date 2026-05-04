@@ -23,9 +23,7 @@ L’objectif est de moderniser l’architecture du site, améliorer ses performa
 - **GitHub Pages**
 - **HTML / CSS / SASS**
 
-## Import
-
-`Prérequis côté Windows`
+### Import
 
 ## Outils nécessaires
 
