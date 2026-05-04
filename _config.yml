@@ -60,7 +60,8 @@ profile: true
 lsi: false
 safe: false
 destination: _site
-source: ../
+source: .
+collections_dir: _posts_imported
 incremental: false
 highlighter: rouge
 gist:
@@ -73,7 +74,6 @@ kramdown:
 pagination:
   enabled: true
   title: ':title'
-  title_suffix: ' - Page :num' # Suffixe ajouté au titre de la page
   limit: 0       
   permalink: '/page/:num/'
   show_downloads: true
