@@ -61,7 +61,6 @@ lsi: false
 safe: false
 destination: _site
 source: .
-collections_dir: _posts_imported
 incremental: false
 highlighter: rouge
 gist:
