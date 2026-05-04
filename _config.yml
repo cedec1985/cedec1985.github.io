@@ -79,17 +79,12 @@ pagination:
   debug: true
   per_page: 4
   sort_field: 'date'
-  sort_reverse: true
+  sort_reverse: false
   trailing_page_links: true
   trail:
     before: 2
     after: 2
-  above:
-    - 1
-    - 2
-    - 3
-    - 4
-    - 5
+  
 
 
 
