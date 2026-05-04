@@ -21,7 +21,7 @@ width="40"
             </a>
 </p></div> 
 
-<p class="pagination" style="color: blue; font-size: 11px; font-weight: bold;">
+<p style="color: blue; font-size: 11px; font-weight: bold;">
 <p>  
 {% if paginator.total_pages > 1 %}
 Page  {{ paginator.page }} sur {{ paginator.total_pages }}
