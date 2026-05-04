@@ -22,9 +22,11 @@ width="40"
 </p></div> 
 
 <p class="rss-subscribe" style="color: blue; font-size: 11px; font-weight: bold;">
+<p>  
 {% if paginator.total_pages > 1 %}
 Page  {{ paginator.page }} sur {{ paginator.total_pages }}
 {% endif %}
+</p>
 </p>
 <hr>
 
