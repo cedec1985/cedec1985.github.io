@@ -14,13 +14,14 @@ alt="logo yesweblog"
 width="40"
 %}
 
- <div class="pagination"><p>
+<div class="pagination"><p>
             <a href="{{ paginator.previous_page_path }}">Précédent
 </a>| <a
                 href="{{ paginator.next_page_path }}">Suivant
             </a>
 </p></div> 
-<p style="color: blue; font-size: 11px; font-weight: bold;">  
+
+<p class="rss-subscribe" style="color: blue; font-size: 11px; font-weight: bold;">
 {% if paginator.total_pages > 1 %}
 Page  {{ paginator.page }} sur {{ paginator.total_pages }}
 {% endif %}
