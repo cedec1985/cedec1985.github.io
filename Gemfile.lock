@@ -295,6 +295,7 @@ DEPENDENCIES
   fileutils (~> 1.4)
   github-pages (~> 232)
   http_parser.rb (~> 0.6.0)
+  jekyll (~> 3.10.0)
   jekyll-feed (= 0.17.0)
   jekyll-import (~> 0.25.0)
   jekyll-paginate-v2 (~> 1.0)
