@@ -173,6 +173,14 @@ h2 {
           </a><script src="https://cdn.flipboard.com/web/buttons/js/flbuttons.min.js"
           type="text/javascript"></script>
 </div>
+<div>
+{% for post in site.posts %}
+  <h2><a href="{{ post.url }}">{{ post.title }}</a>
+  <span class="date">{{ post.date | date_to_string }}</span>
+  </h2>
+{% endfor %}
+</div>
+<hr>
   {% include logo.html url="http://yesweblog.fr/" file="../assets/logo.jpeg" alt="logo yesweblog" width="40" %}
 <hr>
 </main>
