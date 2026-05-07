@@ -69,22 +69,13 @@ kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 
-#Pagination settings
-pagination:
-  enabled: true
-  title: ':title'
-  limit: 0       
-  permalink: '/page/:num/'
-  show_downloads: true
-  debug: true
-  per_page: 4
-  sort_field: 'date'
-  sort_reverse: false
-  trailing_page_links: true
-  trail:
-    before: 2
-    after: 2
-  
+plugins:
+  - jekyll-paginate
+
+# Pagination with jekyll-paginate plugin, jekyll-paginate-v2 plugin is not compatible with GitHub Pages
+paginate: 4
+paginate_path: "/page:num/"
+
 github: [metadata]
 
 
