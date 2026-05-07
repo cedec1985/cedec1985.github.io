@@ -1,7 +1,7 @@
 ---
 layout: default
 title: contenu du blog
-permalink : /content.html
+permalink : /content.html/
 logo: assets/logo.jpeg
 ---
 
