@@ -4,8 +4,6 @@ title: "Yes We Blog !"
 url: "https://yesweblog.fr/"
 feed_url: "https://yesweblog.fr/feed/"
 permalink : /yesweblog.html
-pagination:
-    enabled: true
 ---
 
 <p class="pagination">

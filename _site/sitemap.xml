@@ -28,12 +28,9 @@
 <loc>http://localhost:4000/content.html</loc>
 </url>
 <url>
+<loc>http://localhost:4000/yesweblog.html</loc>
+</url>
+<url>
 <loc>http://localhost:4000/SECURITY.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/yesweblog.html/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/yesweblog.html/page/2/</loc>
 </url>
 </urlset>
