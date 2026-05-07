@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Description du projet | de Blogger à Jekyll</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Description du projet" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Creation d’un blog Jekyll à partir d’un export de Blogger et déploiement sur GitHub Pages." />
+<meta property="og:description" content="Creation d’un blog Jekyll à partir d’un export de Blogger et déploiement sur GitHub Pages." />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="de Blogger à Jekyll" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Description du projet" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"Creation d’un blog Jekyll à partir d’un export de Blogger et déploiement sur GitHub Pages.","headline":"Description du projet","name":"de Blogger à Jekyll","url":"http://localhost:4000/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+<div class="wrapper"><a class="site-title" rel="author" href="/">de Blogger à Jekyll</a>
+  <nav class="site-nav">
+        <div class="trigger"><a class="page-link" href="/content.html/">contenu du blog</a><a class="page-link" href="/yesweblog.html/">Yes We Blog !</a><a class="page-link" href="/SECURITY.html">Security Policy</a></div>
+  </nav>
+</div>
+    
+    <header class="page-header" role="banner">
+      <h1 class="project-name">Description du projet</h1>
+      <h2 class="project-tagline">Creation d'un blog Jekyll à partir d'un export de Blogger et déploiement sur GitHub Pages.</h2>
+    </header>
+
+<main class="main-content" aria-label="Content" id="content">
+      <div class="wrapper">
+        <div class="home">
+          <h3 id="description-du-projet">Description du projet</h3>
+
+<p>Ce projet consiste à migrer un site existant hébergé sur <strong>Blogger</strong>(https://testavecexcel.blogspot.com)
+vers un site statique basé sur <strong>Jekyll</strong>, puis à le déployer automatiquement via <strong>GitHub Pages</strong>.<br />
+L’objectif est de moderniser l’architecture du site, améliorer ses performances, faciliter la maintenance et bénéficier d’un hébergement gratuit et fiable</p>
+
+<h3 id="objectifs">Objectifs</h3>
+
+<ul>
+  <li>Migrer les articles et pages depuis Blogger (fichiers HTML, XML, CSV)</li>
+  <li>Convertir le contenu au format compatible Jekyll (Markdown)</li>
+  <li>Installer un thème Jekyll (par exemple : cayman)</li>
+  <li>Mettre en place une structure de site statique claire et maintenable</li>
+  <li>Déployer le site via GitHub Pages</li>
+  <li>Préserver le référencement (URLs, métadonnées, etc.)</li>
+</ul>
+
+<h3 id="technologies-utilisées">Technologies utilisées</h3>
+
+<ul>
+  <li><strong>Blogger</strong> (site source)</li>
+  <li><strong>Jekyll</strong> (générateur de site statique)</li>
+  <li><strong>Markdown</strong></li>
+  <li><strong>Liquid</strong></li>
+  <li><strong>Git &amp; GitHub</strong></li>
+  <li><strong>GitHub Pages</strong></li>
+  <li><strong>HTML / CSS / SASS</strong></li>
+</ul>
+
+<h3 id="import">Import</h3>
+
+<h2 id="outils-nécessaires">Outils nécessaires</h2>
+
+<p>Ruby (avec DevKit) → recommandé : Ruby 2.6 ou 2.7
+Git Bash (beaucoup plus fiable que CMD)</p>
+
+<p>Si Ruby n’est pas encore installé :
+https://rubyinstaller.org
+(prendre Ruby+Devkit et cocher “Add Ruby to PATH”)</p>
+
+<p>Vérifie :
+ruby -v
+gem -v</p>
+
+<h2 id="installer-jekyll">Installer Jekyll</h2>
+
+<ul>
+  <li>
+    <p>gem install jekyll bundler</p>
+  </li>
+  <li>
+    <p>bundle install : installe les dépendances</p>
+  </li>
+</ul>
+
+<p>Créer un site Jekyll de base :</p>
+
+<ul>
+  <li>jekyll new mon-site</li>
+  <li>cd mon-site</li>
+  <li>bundle exec jekyll serve</li>
+</ul>
+
+<p>Vérifie que le site fonctionne sur</p>
+
+<p>http://localhost:4000</p>
+
+<h2 id="installer-jekyll-import">Installer jekyll-import</h2>
+
+<p>Dans Git Bash ou PowerShell :
+gem install jekyll-import
+(aucun problème avec Jekyll 3.10.0)</p>
+
+<h2 id="préparer-lexport-blogger">Préparer l’export Blogger</h2>
+
+<ul>
+  <li>Blogger → Paramètres</li>
+  <li>Gérer le blog</li>
+  <li>Sauvegarder le contenu</li>
+  <li>Tu obtiens un fichier .xml</li>
+  <li>Copie ce fichier dans le dossier racine de ton site Jekyll</li>
+</ul>
+
+<p>Exemple :
+C:\sites\mon-blog-jekyll\blogger-export.xml</p>
+
+<p>Se placer dans le dossier Jekyll :</p>
+
+<p>cd /c/sites/mon-blog-jekyll</p>
+
+<h2 id="commande-import-blogger-windows">Commande import Blogger (Windows)</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    ruby -r rubygems -e "require 'jekyll-import';
+    JekyllImport::Importers::Blogger.run({
+    'source' =&gt; 'blogger-export.xml'})"
+
+</code></pre></div></div>
+<h4 id="dépendances-additionnelles-">Dépendances additionnelles !</h4>
+
+<p>gem install rexml safe_yaml</p>
+
+
+<hr>
+  </nav>
+    <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+  </div>
+      </div>
+</main>
+  </body>
+<footer class="site-footer h-card">
+  <div class="footer-col-wrapper">
+    <div class="footer-col footer-col-1">
+  
+        <li>Email : 
+          <a class="u-email" href="mailto:ceddec550@gmail.com">
+            <span class="username">ceddec550@gmail.com</span>
+          </a>
+        </li>
+        <li>Github : 
+          <a href="https://github.com/cedec1985">
+            <span class="username">cedec1985</span>
+          </a>
+        </li>
+        <li>LinkedIn : 
+          <a href="https://www.linkedin.com/in/cedricdecraim">
+            <span class="username">cedricdecraim</span>
+          </a>
+        </li>
+     
+    </div>
+  </div> 
+  <span class="site-footer-credits">Cette page est générée par<a href="https://pages.github.com">GitHub Pages</a>.</span>
+<p>
+Voici une liste de sites/blogs que je consulte régulièrement :
+  <figure>
+     <a href="http://yesweblog.fr/">
+     <img src="/assets/logo.jpeg" width="40"
+        alt="logo yesweblog"/>
+     </a>
+  </figure>
+
+<br>
+</p>
+</footer>
+</html>
