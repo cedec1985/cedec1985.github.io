@@ -25,6 +25,8 @@ end
 gem "liquid", "~> 4.0"
 gem "csv", "~> 3.0"
 gem "fileutils", "~> 1.4"
+gem "irb", "~> 1.18.0" # Interactive Ruby Shell, for debugging and testing
+gem "psych", "~> 4.0" # YAML parser and emitter, used for configuration and data files
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
